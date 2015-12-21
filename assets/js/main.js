@@ -231,3 +231,10 @@ $(function(){
        }
    });
 });
+
+// Slide .form__sectionHeader hidden blocks
+$(function(){
+    $('.form__sectionHeader').click(function(){
+        $(this).parent().find('.hidden').slideToggle();
+    });
+});

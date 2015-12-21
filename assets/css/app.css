@@ -35,6 +35,9 @@ a:hover {
 .text-center {
   text-align: center;
 }
+.pointer {
+  cursor: pointer;
+}
 .nopadding {
   padding-left: 0;
   padding-right: 0;
@@ -66,6 +69,9 @@ a:hover {
   font-size: 13px;
   text-decoration: none;
   margin-top: 28px;
+}
+.web-alternative:hover {
+  color: #bebebe;
 }
 .title {
   font-weight: 300;
@@ -1518,7 +1524,7 @@ a:hover {
   display: block;
 }
 /* .editAccount */
-.editAccount_--photo {
+.editAccount__photo {
   width: 330px;
   position: relative;
   margin-left: 30px;
@@ -1526,7 +1532,7 @@ a:hover {
   height: 330px;
   overflow: hidden;
 }
-.editAccount_--photo img {
+.editAccount__photo img {
   margin: 0 !important;
   position: absolute;
   width: 100%;
@@ -1573,7 +1579,7 @@ a:hover {
 /* .docsSection */
 .docsSection {
   border-top: 1px solid #bdbdbd;
-  margin: 35px 0;
+  margin: 0 0 35px 0;
 }
 .docsSection__row {
   font-size: 0;

@@ -84,6 +84,10 @@ a {
 	text-align: center;
 }
 
+.pointer {
+	cursor: pointer;
+}
+
 .nopadding {
 	padding-left: 0;
 	padding-right: 0;
@@ -121,6 +125,10 @@ a {
 	font-size: 13px;
 	text-decoration: none;
 	margin-top: 28px;
+
+	&:hover {
+		color: #bebebe;
+	}
 }
 
 .title {
@@ -1838,7 +1846,7 @@ a {
 /* .editAccount */
 
 .editAccount {
-	&_--photo{
+	&__photo{
 		width: 330px;
 		position: relative;
 		margin-left: 30px;
@@ -1906,7 +1914,7 @@ a {
 
 .docsSection {
 	border-top: 1px solid @disabled-color;
-	margin: 35px 0;
+	margin: 0 0 35px 0;
 
 	&__row {
 		font-size: 0;
