@@ -175,10 +175,8 @@ $(function(){
         check_rules = check_rules || false;
         var disabled = false;
 
-        $(selector).find('input[required]').each(function(){
-
+        $(selector).find('input[required],textarea[required],select[required]').each(function(){
             if (!$(this).val()) {
-                console.log($(this));
                 disabled = true;
             }
         });
@@ -208,12 +206,12 @@ $(function(){
         var form = $(this);
 
         var rules = $(this).hasClass('validate-rules');
-        $(this).find('input').change(function(){
+        form.find('input').change(function(){
             var disabled = check(form, rules);
-            $(this).find('.submit').prop('disabled', disabled);
+            form.find('.submit').prop('disabled', disabled);
         });
 
-        $(this).submit(function(){
+        form.submit(function(){
             e.preventDefault();
             var ok = ! check(form, rules);
             return ok;
