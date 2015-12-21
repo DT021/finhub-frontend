@@ -596,9 +596,6 @@ a:hover {
   margin-top: 10px;
   background: #01b5b1 !important;
 }
-.btn__myMenu:hover {
-  color: white;
-}
 .btn--photo {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
@@ -1790,12 +1787,12 @@ a:hover {
   width: 100%;
 }
 .userList {
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 .userList__item {
-  list-style-type: none;
   color: white;
   width: 275px;
   background: #365280;
@@ -2209,7 +2206,6 @@ BlackList
 .userLogin {
   color: white;
   font-weight: 300;
-  text-decoration: none;
 }
 .userLogin:hover {
   color: white;

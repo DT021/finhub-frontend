@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:400,300,500,700&subset=latin,cyrillic" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/vendor/slick-1.5.9/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/grid12.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+	<header class="header container">
+    <div class="row">
+        <div class="col-sm-3">
+            <a class="logo" href="/"><img src="assets/img/logo.png" alt=""/></a>
+        </div>
+        <div class="col-sm-6">
+            <div class="mainPromo">
+                <div class="mainPromo__col">
+                    <div class="mainPromo__title">Заголовок акции</div>
+                    <div class="mainPromo__desc">Краткое пояснение акции</div>
+                </div>
+                <div class="mainPromo__col text-right">
+                    <div class="wrapper"><span class="mainPromo__date">c 26 по 30 декабря</span></div>
+                    <a class="mainPromo__link" href="">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 text-right controlBox">
+
+            <!-- notyfy показываем авторизованным пользователям при наличии сообщений (?) -->
+            <!--
+            <a href="" class="notify">
+                <div class="notify__count">15</div>
+            </a>
+            -->
+
+            <div class="headControlsWrapper">
+                <!-- Неавторизованные пользователи увидят ссылки авторизации и регистрации -->
+                <a class="btn btn--inline" href="#modal-login">Вход</a>
+                <a class="btn btn--inline btn--primary" href="">Регистрация</a>
+
+                <!-- Авторизованным пользователям отображаем их логин и меню пользователя -->
+                <!--
+                <a href="" class="btn btn--inline btn--user btn--primary">Devastator3000</a>
+                <div class="headControls">
+                    <div class="headControls__row">
+                        <a class="headControls__link icon icon--message" href="">Сообщения</a>
+                        <a class="headControls__link" href="">
+                            <b class="headControls__num">75<i class="headControls__txt">%</i></b>
+                            Прозрачность
+                        </a>
+                    </div>
+                    <div class="headControls__row">
+                        <a class="headControls__link icon icon--money" href="">Сделки</a>
+                        <a class="headControls__link icon icon--gear" href="">Настройки</a>
+                    </div>
+                    <div class="headControls__row">
+                        <a class="headControls__link" href="">
+                            <b class="headControls__num">20<i class="headControls__txt">бл.</i></b>
+                            Рейтинг
+                        </a>
+                        <a class="headControls__link headControls__link--colorless icon icon--exit" href="">Выход</a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mainMenuWrapper">
+    <nav role="main" class="mainMenu container">
+        <div class="mainMenu__item mainMenu__item_active"><a class="mainMenu__link" href="">Главная</a></div>
+        <div class="mainMenu__item">
+            <a class="mainMenu__link" href="">Мне нужны деньги</a>
+
+            <div class="mainMenu__sub">
+                <a class="mainMenu__sub__link" href="">Первая ссылочка</a>
+                <a class="mainMenu__sub__link" href="">Еще одна ссылка</a>
+                <a class="mainMenu__sub__link" href="">А это очень длинная ссылка</a>
+                <a class="mainMenu__sub__link" href="">Кончик</a>
+            </div>
+        </div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Готов вложить деньги</a></div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Напишите нам</a></div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Помощь</a></div>
+    </nav>
+</div>
+
+<div class="container content">
+
+    <h1>Личный кабинет</h1>
+</div>
+	<div class="container">
+		<nav>
+			<ul class="accountMenu">
+				<li class="accountMenu__item">
+					<a href="#">Мои данные</a>
+				</li>
+				<li class="accountMenu__item ">
+					<a href="#">Личные сообщения</a>
+				</li>
+				<li class="accountMenu__item">
+					<a href="#">Мои заявки</a>
+				</li>
+				<li class="accountMenu__item">
+					<a href="#">Мои договоры</a>
+				</li>
+				<li class="accountMenu__item accountMenu__item--active accountMenu__item--lastItem">
+					<a href="#">Черный список</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="accountContent">
+			<div class="contentBlackList">
+				<div class="contentBlackList__login">Логин пользователя: </div>
+				<form>
+					<input type="text" />
+					<button type="submit" class="submit btn btn--inline btn--primary btn--addBlackList">Добавить</button>
+				</form>
+				<div class="blackList">
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_fdafdafdfasflogin</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">userfdfasdafaf_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_lfdsfdasfadfdfogin</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_fdsfsfsdaffdsfdaflogin</a></div><a href="#"><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+					<div class="blackList__item">
+						<div class="blackList__item--user"><a class="userLogin userLogin--userBlackList" href="#">user_login</a><a href="#"></div><img src="assets/img/close.png"></a>
+					</div>
+				</div>
+			</div>	
+		</div><!--Wrapper -->
+	</div>
+
+
+
+	<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 footer__credentials">
+                <div class="footer__credentials__item">OOO “Фин-Хаб” © 2015</div>
+                <br/>
+
+                <div class="footer__credentials__item">ИНН 2721216070</div>
+                <div class="footer__credentials__item">ОГРН 1152721002301</div>
+            </div>
+            <div class="col-md-2">
+                <nav class="footerNav">
+                    <div class="footerNav__link footerNav__link_top"><a href="">Мне нужны деньги</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Найти кредитора</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Выставить заявку</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Важно знать</a></div>
+                </nav>
+            </div>
+            <div class="col-md-3 footerNavPaddingContainer">
+                <nav class="footerNav">
+                    <div class="footerNav__link footerNav__link_top"><a href="">Готов вложить деньги</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Найти заемщика</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Выставить заявку</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Важно знать</a></div>
+                </nav>
+            </div>
+            <div class="col-md-2 footer__col">
+                <a class="footer__link" href="">Оставить отзыв</a> <br/>
+                <a class="footer__link" href="">Помощь</a> <br/>
+
+                <a class="web-alternative" href="http://web-alt.ru" target="_blank">
+                    Сайт разработан WEB ALTERNATIVE
+                </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
