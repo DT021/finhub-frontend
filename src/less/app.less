@@ -760,6 +760,11 @@ a {
 		&:hover{
 			color:white;
 		}
+
+		&--modalOrder {
+			width: 200px;
+			background: @brand-blue;
+		}
 	}
 	&--photo {
 		padding-top: 10px !important;
@@ -799,6 +804,17 @@ a {
 	&[disabled] {
 		background: @disabled-color;
 		color: white;
+	}
+
+	&--confirm {
+		
+	}
+
+	&--reject {
+		font-weight: @medium;
+		color:white;
+		background: #757575;
+		margin-top: 15px;
 	}
 }
 
@@ -1406,6 +1422,10 @@ a {
 }
 
 .offersBody {
+	&__oneColor{
+		background: @brand-bg;
+	}
+
 	&__row {
 		background: white;
 
@@ -1416,6 +1436,7 @@ a {
 		&:hover {
 			background: @brand-blue-light;
 		}
+
 	}
 	
 	&__block {
@@ -1765,6 +1786,10 @@ a {
 			.translate(0, 0);
 			top: 20%;
 		}
+		.orderDialog {
+			.translate(0, 0);
+			top: 5%;
+		}
 
 	}
 }
@@ -1795,7 +1820,145 @@ a {
 	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.4);
 	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.4);
 }
+.modal-body{
 
+}
+.orderDialog {
+	background: white;
+	color:black;
+	width: 943px;
+	padding: 60px;
+	position: fixed;
+	left:35%;
+	z-index: 11;
+	&__close {
+		position: absolute;
+		right: 15px;
+		top:15px;
+	}
+
+	&__status{
+		display: inline-block;
+		color:white;
+		font-weight: @medium;
+		font-size: 16px;
+		padding: 10px 15px;
+		background: @brand-secondary;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	&__orderNumber{
+		display: inline-block;
+		font-weight: @light;
+		font-size: 20px;
+		margin-left: 15px;
+	}
+	&__content{
+		margin-top: 25px;
+	}
+}
+
+.aboutOrder {
+	textarea{
+		margin-top: 15px;
+		padding: 15px;
+		display: block;
+		line-height: 20px;
+		height: 220px;
+		width:100%;
+		border:1px solid @brand-blue;
+		resize:none;
+	}
+	&__userBlock{
+		display: inline-block;
+		margin-bottom: -35px;
+
+		a {
+			font-weight: @light;
+			position: absolute;
+			font-size: 18px;
+			color:black;
+			line-height: -30px;
+		}
+
+		span {	
+			margin-right: 15px;
+			font-weight: @light;
+			color:#616161;
+		}
+	}
+
+	&__comments {
+		margin-top: 15px;
+		font-weight: @light;
+
+		span {
+			display: block;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__buttonWrapper {
+		float:left;
+		width: 200px;
+		margin-right: 20px;
+	}
+
+	&__buttons {
+		padding-top: 30px;
+		overflow: hidden;
+
+		span {
+			font-weight: @light;
+		}
+	}
+
+}
+
+.aboutLoan{
+	&__item{
+		padding-bottom: 10px;
+
+		&--name {
+			display: inline-block;
+			width:145px;
+			font-weight: @light;
+		}
+
+		&--value {
+			font-weight: @light;
+			font-size:18px;
+		}
+	}
+
+	&__notes {
+		font-weight: @light;
+
+		ul {
+			font-size:18px;
+			color: @brand-secondary;
+			margin-bottom: 35px;
+
+			li {
+				margin-bottom: 10px;
+
+				span {
+				color:black;
+				}
+				a{
+					color:black;
+				}
+			}
+
+		}
+	}
+}
+
+.ages{
+	line-height: 55px;
+}
 #close {
 	display: none;
 }
@@ -2118,27 +2281,38 @@ a {
 	padding:0;
 
 	&__item {
-		width:20%;
+		display: block;
+		width:16.66%;
+		height: 60px;
 		float:left;
 		text-align: center;
 		&--lastItem{
-			width:19.95%;
+			
 			border-right: none;
 		}
+
+		
+
 		& a {
 			display: block;
 			background:@brand-primary-dark;
 			width:100%;
-			padding: 20px 30px;
+			height: 100%;
+			padding: 15px 30px;
 			color:white;
 			border-right: 1px solid #d5dbe4;
 			border-bottom: 1px solid #94a6c2;
 			font-family: 'Exo 2', sans-serif;
 			font-weight: @medium;
 			font-size:18px;
+			text-decoration: none;
 			
 		}
-
+		&--messages {
+			& a {
+				padding:15px 10px;
+			}
+		}
 		& a:active {
 			background: @brand-primary;
 			border-bottom:none;
@@ -2472,6 +2646,12 @@ a {
 		margin-right:15px;
 		margin-left:15px;
 	}
+	&--modalOrders{
+		display: inline-block;
+		margin-right: 10px;
+		width: 70px;
+		height: 70px;
+	}
 }
 
 
@@ -2536,13 +2716,17 @@ MyPage
 			color:@brand-secondary;
 			margin-right: 5px;
 			margin-left: 5px;
-			img{
-				margin-top: -5px;
-			}
+			
 		}
 
 		&--bad {
 			color:@brand-danger;
+		}
+		&--modalBad{
+			font-size: 14px;
+			img{
+				display: inline-block;
+			}
 		}
 
 		&--name {
@@ -2567,6 +2751,16 @@ MyPage
 			font:18px 'Exo 2', sans-serif;
 			font-weight: @light;
 			text-decoration: underline;
+		}
+
+		&--modalOrderName{
+			display: block;
+			margin-top: 5px;
+			font-size: 14px;
+		}
+		&--modalOrderValue{
+			font-size: 14px;
+			color:black;
 		}
 	}
 }
@@ -2787,7 +2981,7 @@ BlackList
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-top-color: #01b5b1;
+  border-top-color: @brand-secondary;
   border-bottom: none;
 }
 
@@ -2798,7 +2992,7 @@ BlackList
   color: green;
 }
 .selectric-hover .selectric .button:after {
-  border-top-color: #01b5b1;
+  border-top-color: @brand-secondary;
 }
 
 .selectric-open {
@@ -2954,3 +3148,75 @@ background: inherit;
 	width: 200px;
 }
 /*        */
+.requests{
+	position: relative;
+	&__filter{
+		display:block;
+		width:160px;
+		float:left;
+		padding-bottom: 20px;
+	}
+	&__select{
+		position: absolute;
+		top:0;
+		right:0;
+		float:right;
+			width:250px;
+		select{
+			
+		}
+	}
+}
+
+
+
+input[type="radio"] {
+	display: none;
+	&:checked + label {
+		&:after {
+			width: 8px;
+			height: 8px;
+			left: 4px;
+			margin-top: -4px;
+		}
+	}
+}
+.LabelRadio {
+		display: inline-block;
+		cursor: pointer;
+		font-size: 14px;
+		color: white;
+		font-weight: @light;
+		position: relative;
+		padding-left: 30px;
+		margin: 5px 0;
+		&--filter{
+			
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			left: 0;
+			top: 50%;
+			margin-top: -8px;
+			border: 1px solid white;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: 8px;
+			top: 50%;
+			margin-top: 0;
+			background: white;
+			border-radius: 50%;
+			.transition(all 0.1s ease 0s);
+		}
+}
