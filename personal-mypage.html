@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:400,300,500,700&subset=latin,cyrillic" type="text/css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/vendor/slick-1.5.9/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/grid12.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+<header class="header container">
+    <div class="row">
+        <div class="col-sm-3">
+            <a class="logo" href="/"><img src="assets/img/logo.png" alt=""/></a>
+        </div>
+        <div class="col-sm-6">
+            <div class="mainPromo">
+                <div class="mainPromo__col">
+                    <div class="mainPromo__title">Заголовок акции</div>
+                    <div class="mainPromo__desc">Краткое пояснение акции</div>
+                </div>
+                <div class="mainPromo__col text-right">
+                    <div class="wrapper"><span class="mainPromo__date">c 26 по 30 декабря</span></div>
+                    <a class="mainPromo__link" href="">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 text-right controlBox">
+
+            <!-- notyfy показываем авторизованным пользователям при наличии сообщений (?) -->
+            <!--
+            <a href="" class="notify">
+                <div class="notify__count">15</div>
+            </a>
+            -->
+
+            <div class="headControlsWrapper">
+                <!-- Неавторизованные пользователи увидят ссылки авторизации и регистрации -->
+                <a class="btn btn--inline" href="#modal-login">Вход</a>
+                <a class="btn btn--inline btn--primary" href="">Регистрация</a>
+
+                <!-- Авторизованным пользователям отображаем их логин и меню пользователя -->
+                <!--
+                <a href="" class="btn btn--inline btn--user btn--primary">Devastator3000</a>
+                <div class="headControls">
+                    <div class="headControls__row">
+                        <a class="headControls__link icon icon--message" href="">Сообщения</a>
+                        <a class="headControls__link" href="">
+                            <b class="headControls__num">75<i class="headControls__txt">%</i></b>
+                            Прозрачность
+                        </a>
+                    </div>
+                    <div class="headControls__row">
+                        <a class="headControls__link icon icon--money" href="">Сделки</a>
+                        <a class="headControls__link icon icon--gear" href="">Настройки</a>
+                    </div>
+                    <div class="headControls__row">
+                        <a class="headControls__link" href="">
+                            <b class="headControls__num">20<i class="headControls__txt">бл.</i></b>
+                            Рейтинг
+                        </a>
+                        <a class="headControls__link headControls__link--colorless icon icon--exit" href="">Выход</a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mainMenuWrapper">
+    <nav role="main" class="mainMenu container">
+        <div class="mainMenu__item mainMenu__item_active"><a class="mainMenu__link" href="">Главная</a></div>
+        <div class="mainMenu__item">
+            <a class="mainMenu__link" href="">Мне нужны деньги</a>
+
+            <div class="mainMenu__sub">
+                <a class="mainMenu__sub__link" href="">Первая ссылочка</a>
+                <a class="mainMenu__sub__link" href="">Еще одна ссылка</a>
+                <a class="mainMenu__sub__link" href="">А это очень длинная ссылка</a>
+                <a class="mainMenu__sub__link" href="">Кончик</a>
+            </div>
+        </div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Готов вложить деньги</a></div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Напишите нам</a></div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Помощь</a></div>
+    </nav>
+</div>
+
+<div class="container content">
+    <h1>Личный кабинет</h1>
+</div>
+	<div class="container">
+		<nav>
+            <ul class="accountMenu">
+                <li class="accountMenu__item accountMenu__item--active">
+                    <a href="#">Мои данные</a>
+                </li>
+                <li class="accountMenu__item accountMenu__item--messages">
+                    <a href="#">Личные сообщения</a>
+                </li>
+                <li class="accountMenu__item">
+                    <a href="#">Мои заявки</a>
+                </li>
+                <li class="accountMenu__item">
+                    <a href="#">Мои сделки</a>
+                </li>
+                <li class="accountMenu__item">
+                    <a href="#">Мои договоры</a>
+                </li>
+                <li class="accountMenu__item accountMenu__item--lastItem">
+                    <a href="#">Черный список</a>
+                </li>
+            </ul>
+        </nav>
+	</div>
+	<div class="container">
+		<div class="accountContent">
+			<div class="myInfo">
+				<div class="myInfo__leftColumn myMenu">
+					<img class="myMenu__avatar" src="http://lorempixel.com/193/183/fashion/">
+					<div class="myMenu__buttons">
+					<form>
+						<button class="btn btn_primary btn__myMenu">
+							<img src="assets/img/icon_message.png">Написать сообщение
+						</button>
+						<button class="btn btn_primary btn__myMenu btn__myMenu--deal">Предложить сделку</button>
+					</form>
+					</div>
+					<div class="myMenu__info">
+						<div class="myMenu__info--name">Рейтинг:
+							<span class="myMenu__info--value">415 баллов</span>
+						</div>
+						<div class="myMenu__info--name">Прозрачность: 
+							<span class="myMenu__info--value">75%</span>
+						</div>
+						<div class="myMenu__info--name">Отзывы: 
+							<span class="myMenu__info--value">45</span>
+						</div>
+						<div class="myMenu__info--name">Оценки:
+							<span class="myMenu__info--good"> 
+								<img src="assets/img/good.png"> 40</span>
+							<span class="myMenu__info--bad">
+								<img  src="assets/img/bad.png"> 5</span>
+						</div>
+						<a href="#">Редактировать</a>
+					</div>
+				</div>
+				<div class="myInfo__rightColumn">
+					<div class="userHeader">
+						<div class="userHeader__info">
+							<div class="userHeader__name">Александр Сергеевич Иванов</div>
+							<div class="userHeader__subInfo"><span>физическое лицо</span><span>45лет</span><span>Хабаровск</span></div>
+							<div class="userHeader__userInfo">email: email_adress@mail.ru</div>
+							<div class="userHeader__userInfo">Моб. телефон: +7(914)123-45-67</div>
+							<div class="userHeader__userInfo">Регион проживания: Хабаровский край</div>
+							<div class="userHeader__userInfo">Населенный пункт: г. Хабаровск</div>
+						</div>
+						<div class="userHeader__registration">
+							<div class="userHeader__registration--date">Зарегистрирован: <span>2 года назад</span>
+							</div><br>
+							<div class="userHeader__registration--date"> Сделок: <span>217</span>
+							</div>
+						</div>
+					</div>
+					<!--
+
+					ШАПКА ДЛЯ ЮРИДИЧЕСКОГО ЛИЦА
+					
+					<div class="userHeader userHeader--urlico">
+						<div class="userHeader__info">
+							<div class="userHeader__name">ООО "Наименование компании"</div>
+							<div class="userHeader__subInfo userHeader__subInfo--urLico">
+								<span>юридическое лицо</span>
+								<span>Хабаровск</span></div>
+							<div class="userHeader__userInfo userHeader__userInfo--urLico">
+								<span>email:</span> email_adress@mail.ru
+							</div>
+							<div class="userHeader__userInfo userHeader__userInfo--urLico">
+								<span>Раб. телефон:</span> +7(914)123-45-67
+							</div>
+							<div class="userHeader__userInfo userHeader__userInfo--urLico">
+								<span>ОГРН:</span> 123456789
+							</div>
+							<div class="userHeader__userInfo userHeader__userInfo--urLico">
+								<span>ИНН:</span> 123456789
+							</div>
+							<div class="userHeader__userInfo userHeader__userInfo--urLico">
+								<span>Сайт:</span> name.com
+							</div>
+						</div>
+						<div class="userHeader__registration">
+							<div class="userHeader__registration--date">Зарегистрирован: <span>2 года назад</span>
+							</div><br>
+							<div class="userHeader__registration--date"> Сделок: <span>217</span>
+							</div>
+						</div>
+					</div>
+
+					-->
+				<div class="messages messages--review">
+					<div class="messages--category">Отзывы: </div>
+					<form>
+						<textarea></textarea>
+						<div class="messages__btn messages__btn--send">
+							<button type="submit" class="submit btn btn--inline btn--primary btn--sendMessage">Отправить</button>
+						</div>
+					</form>
+					<div class="messages__newMessages messages__newReview messageBox">
+						<div class="messageBox__item">
+							<div class="messageBox__avatar--left">
+								<div class="avatarPhoto avatarPhoto--message"><img src="http://lorempixel.com/220/220/cats/"></div>
+								<div class="messageBox__date">
+									15:35<br>
+									27 октября<br>
+									user-login<br>
+								</div>
+							</div>
+							<div class="messageBox__message--wrap">
+							<div class="messageBox__message messageBox__message--left messageBox__message--unread messageBox__message--review">
+								<p>Личное сообщение — сообщение, отправляемое через внутреннюю службу веб-сайта и видимое только его адресату.Предназначается для общения на темы, которые не предназначены для всех или же им просто не интересны</p>
+								<div class="messageBox__owner">Владелец страницы</div>
+							</div>
+						</div>
+						</div>
+						<div class="messageBox__item">
+							<div class="messageBox__avatar--left">
+								<div class="avatarPhoto avatarPhoto--message"><img src="http://lorempixel.com/210/210/cats/"></div>
+								<div class="messageBox__date">
+									15:35<br>
+									27 октября<br>
+									user-login
+								</div>
+							</div>
+							<div class="messageBox__message--wrap">
+							<div class="messageBox__message messageBox__message--left messageBox__message--review">
+								<p>Личное сообщение — сообщение, отправляемое через внутреннюю службу веб-сайта и видимое только его адресату.Предназначается для общения на темы, которые не предназначены для всех или же им просто не интересны</p>
+							</div>
+							</div>
+						</div>
+					</div><!--TExtarea -->
+				</div><!--Messages -->
+			</div><!--Right Column -->
+				</div>
+			</div>
+		</div><!--Wrapper -->
+	</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 footer__credentials">
+                <div class="footer__credentials__item">OOO “Фин-Хаб” © 2015</div>
+                <br/>
+
+                <div class="footer__credentials__item">ИНН 2721216070</div>
+                <div class="footer__credentials__item">ОГРН 1152721002301</div>
+            </div>
+            <div class="col-md-2">
+                <nav class="footerNav">
+                    <div class="footerNav__link footerNav__link_top"><a href="">Мне нужны деньги</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Найти кредитора</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Выставить заявку</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Важно знать</a></div>
+                </nav>
+            </div>
+            <div class="col-md-3 footerNavPaddingContainer">
+                <nav class="footerNav">
+                    <div class="footerNav__link footerNav__link_top"><a href="">Готов вложить деньги</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Найти заемщика</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Выставить заявку</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Важно знать</a></div>
+                </nav>
+            </div>
+            <div class="col-md-2 footer__col">
+                <a class="footer__link" href="">Оставить отзыв</a> <br/>
+                <a class="footer__link" href="">Помощь</a> <br/>
+
+                <a class="web-alternative" href="http://web-alt.ru" target="_blank">
+                    Сайт разработан WEB ALTERNATIVE
+                </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
