@@ -124,110 +124,188 @@
                         <div class="editAccount__opacity__text">Прозрачность</div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <div class="form__row form__row--full">
                         <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="surname1">Фамилия:</label>
-                            <input id="surname1" name="surname" type="text" class="form__input form__input--text" required />
+                            <label class="form__label form__label--text required" for="company1">Полное наименование:</label>
+                            <input id="company1" name="surname" type="text" class="form__input form__input--text" required />
                         </div>
                     </div>
-                    <div class="form__row form__row--full">
-                        <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="name1">Имя:</label>
-                            <input id="name1" name="name" type="text" class="form__input form__input--text" required />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form__row form__row--full">
+                                <div class="form__inputBlock">
+                                    <label class="form__label form__label--text required" for="email1">E-mail:</label>
+                                    <input id="email1" name="email" type="text" class="form__input form__input--text" required />
+                                </div>
+                            </div>
+                            <div class="form__row form__row--full">
+                                <div class="form__inputBlock">
+                                    <label class="form__label form__label--text required" for="phone1">Телефон контактного лица:</label>
+                                    <input id="phone1" name="phone" type="text" class="form__input form__input--text" required />
+                                </div>
+                            </div>
+                            <div class="form__row form__row--full">
+                                <div class="form__inputBlock">
+                                    <label class="form__label form__label--text required" for="address1">Адрес регистрации:</label>
+                                    <textarea id="address1" name="address" class="form__input form__input--textarea" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form__row form__row--full form__row--fullInline">
+                                <div class="form__inputBlock form__inputBlock--small">
+                                    <label class="form__label form__label--text required" for="ogrn1">ОГРН:</label>
+                                    <input id="ogrn1" name="ogrn" type="text" class="form__input form__input--text text-right" required />
+                                </div>
+                                <div class="form__inputBlock form__inputBlock--small">
+                                    <label class="form__label form__label--text required" for="inn1">ИНН:</label>
+                                    <input id="inn1" name="inn" type="text" class="form__input form__input--text text-right" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form__row form__row--full">
+                                <div class="form__inputBlock">
+                                    <label class="form__label form__label--text required" for="phone2">Рабочий телефон:</label>
+                                    <input id="phone2" name="phone2" type="text" class="form__input form__input--text" required />
+                                </div>
+                            </div>
+                            <div class="form__row form__row--full">
+                                <div class="form__inputBlock">
+                                    <label class="form__label form__label--text" for="site1">Сайт:</label>
+                                    <input id="site1" name="site" type="text" class="form__input form__input--text" />
+                                </div>
+                            </div>
+                            <div class="form__row form__row--full">
+                                <div class="form__inputBlock">
+                                    <label class="form__label form__label--text required" for="address2">Фактический адрес:</label>
+                                    <textarea id="address2" name="address2" class="form__input form__input--textarea" required></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form__row form__row--full">
+                </div>
+            </div>
+        </section>
+
+        <section class="form__section">
+            <header class="form__sectionHeader">Руководитель компании:</header>
+            <div class="form__row row nopadding-r">
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="directorpost1">Должность:</label>
+                    <input id="directorpost1" name="directorpost" type="text" class="form__input form__input--text" required />
+                </div>
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="directorsurname1">Фамилия:</label>
+                    <input id="directorsurname1" name="directorsurname" type="text" class="form__input form__input--text" required />
+                </div>
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="directorname1">Имя:</label>
+                    <input id="directorname1" name="directorname" type="text" class="form__input form__input--text" required />
+                </div>
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="directorpatronymic1">Отчество:</label>
+                    <input id="directorpatronymic1" name="directorpatronymic" type="text" class="form__input form__input--text" required />
+                </div>
+            </div>
+        </section>
+
+        <section class="form__section">
+            <header class="form__sectionHeader">Лицо, уполномоченное подписывать договор:</header>
+            <div class="form__row row nopadding-r">
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="authorizedpost1">Должность:</label>
+                    <input id="authorizedpost1" name="authorizedpost" type="text" class="form__input form__input--text" required />
+                </div>
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="authorizedsurname1">Фамилия:</label>
+                    <input id="authorizedsurname1" name="authorizedsurname" type="text" class="form__input form__input--text" required />
+                </div>
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="authorizedname1">Имя:</label>
+                    <input id="authorizedname1" name="authorizedname" type="text" class="form__input form__input--text" required />
+                </div>
+                <div class="form__inputBlock col-md-3">
+                    <label class="form__label form__label--text required" for="authorizedpatronymic1">Отчество:</label>
+                    <input id="authorizedpatronymic1" name="authorizedpatronymic" type="text" class="form__input form__input--text" required />
+                </div>
+            </div>
+            <div class="form__row row nopadding-r">
+                <div class="col-md-9">
+
+                    <div class="form__row form__row--fullInline nopadding">
                         <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="patronymic1">Отчество:</label>
-                            <input id="patronymic1" name="patronymic" type="text" class="form__input form__input--text" required />
+                            <label class="form__label form__label--text required" for="authorizedemail1">Email:</label>
+                            <input id="authorizedemail1" name="authorizedemail" type="text" class="form__input form__input--text" required />
                         </div>
-                    </div>
-                    <div class="form__row form__row--full">
-                        <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="region1">Регион проживания (край, обл.):</label>
-                            <input id="region1" name="region" type="text" class="form__input form__input--text" required />
-                        </div>
-                    </div>
-                    <div class="form__row form__row--full">
-                        <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="doctype1">Вид документа:</label>
-                            <select id="doctype1" name="doctype" class="form__input form__input--select" required>
+                        <div class="form__inputBlock form__inputBlock--big">
+                            <label class="form__label form__label--text required" for="authorizeddoctype1">Основной документ:</label>
+                            <select id="authorizeddoctype1" name="authorizeddoctype" class="form__input form__input--select" required>
                                 <option value="1" selected>Паспорт РФ</option>
                                 <option value="2">Водительское удостоверение</option>
                                 <option value="3">Загран. паспорт</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form__row form__row--full form__row--fullInline">
                         <div class="form__inputBlock form__inputBlock--small">
-                            <label class="form__label form__label--text required" for="passportdate1">Когда выдан:</label>
-                            <input id="passportdate1" name="passportdate" type="text" class="form__input form__input--text text-right" placeholder="ДД.ММ.ГГГГ" required />
-                        </div>
-                        <div class="form__inputBlock form__inputBlock--small">
-                            <label class="form__label form__label--text required" for="passportnum1">Серия и номер:</label>
-                            <input id="passportnum1" name="passportnum" type="text" class="form__input form__input--text text-right" required />
+                            <label class="form__label form__label--text required" for="authorizedpassportnum1">Серия и номер:</label>
+                            <input id="authorizedpassportnum1" name="authorizedpassportnum" type="text" class="form__input form__input--text text-right" required />
                         </div>
                     </div>
+
+                    <div class="form__row form__row--fullInline nopadding">
+                        <div class="form__inputBlock">
+                            <label class="form__label form__label--text" for="authorizedphone1">Рабочий телефон:</label>
+                            <input id="authorizedphone1" name="authorizedphone" type="text" class="form__input form__input--text" placeholder="+7 (XXX) XXX-XX-XX" />
+                        </div>
+                        <div class="form__inputBlock form__inputBlock--big">
+                            <label class="form__label form__label--text required" for="authorizedcode1">Код подразделения:</label>
+                            <input id="authorizedcode1" name="authorizedcode" type="text" class="form__input form__input--text text-right" required />
+                        </div>
+                        <div class="form__inputBlock form__inputBlock--small">
+                            <label class="form__label form__label--text required" for="authorizedpassportdate1">Когда выдан:</label>
+                            <input id="authorizedpassportdate1" name="authorizedpassportdate" type="text" class="form__input form__input--text text-right" placeholder="ДД.ММ.ГГГГ" required />
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="form__row form__row--full">
+                <div class="col-md-3">
+
+                    <div class="row form__row nopadding">
+                        <div class="col-md-8 form__inputBlock form__inputBlock--nolabel">
+                            <button type="button" class="btn btn--primary btn--straight btn--photo ">Загрузить</button>
+                        </div>
+                    </div>
+
+                    <div class="file">
+                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                        <a class="file__name" href="">паспорт.jpg</a>
+                    </div>
+                    <div class="file">
+                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                        <a class="file__name" href="">прописка.jpg</a>
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+
+                    <div class="form__row form__row--fullInline nopadding">
                         <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="email1">E-mail:</label>
-                            <input id="email1" name="email" type="text" class="form__input form__input--text" required />
+                            <label class="form__label form__label--text required" for="authorizedphone2">Телефон:</label>
+                            <input id="authorizedphone2" name="authorizedphone2" type="text" class="form__input form__input--text" placeholder="+7 (XXX) XXX-XX-XX" required />
                         </div>
-                    </div>
-                    <div class="form__row form__row--full">
-                        <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="phone1">Мобильный телефон:</label>
-                            <input id="phone1" name="phone" type="text" class="form__input form__input--text" required />
+                        <div class="form__inputBlock form__inputBlock--nolabel">
+                            <div class="prefix prefix--full">Документ, подтверждающий полномочия
+                            подписания договоров:</div>
                         </div>
-                    </div>
-                    <div class="form__row form__row--full form__row--fullInline">
-                        <div class="form__inputBlock form__inputBlock--small">
-                            <label class="form__label form__label--text required" for="sex1">Пол:</label>
-                            <select id="sex1" name="sex" class="form__input form__input--select" required>
-                                <option value="m" selected>Мужской</option>
-                                <option value="f">Женский</option>
-                            </select>
-                        </div>
-                        <div class="form__inputBlock form__inputBlock--small">
-                            <label class="form__label form__label--text required" for="birthdate1">Дата рождения:</label>
-                            <input id="birthdate1" name="birthdate" type="text" class="form__input form__input--text" placeholder="ДД.ММ.ГГГГ" required />
-                        </div>
-                    </div>
-                    <div class="form__row form__row--full">
-                        <div class="form__inputBlock">
-                            <label class="form__label form__label--text required" for="city1">Населенный пункт:</label>
-                            <select id="city1" name="city" class="form__input form__input--select" required>
-                                <option value="1" selected>Москва</option>
-                                <option value="2">За пределами МКАДа</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form__row form__row--full">
-                        <div class="form__inputBlock form__inputBlock--nolabel row">
-                            <div class="col-md-6">
-                                <button type="button" class="btn btn--full btn--primary btn--straight btn--photo">Загрузить</button>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="file">
-                                    <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                    <a class="file__name" href="">паспорт.jpg</a>
-                                </div>
-                                <div class="file">
-                                    <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                    <a class="file__name" href="">прописка.jpg</a>
-                                </div>
+                        <div class="form__inputBlock form__inputBlock--nolabel">
+                            <button type="button" class="btn btn--primary btn--straight btn--photo btn--floatLeft">Загрузить</button>
+
+                            <div class="file">
+                                <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                <a class="file__name" href="">паспорт.jpg</a>
                             </div>
                         </div>
                     </div>
-                    <div class="form__row form__row--full form__row--fullInline">
-                        <div class="form__inputBlock form__inputBlock--middle">
-                            <label class="form__label form__label--text required" for="sex1">Код подразделения:</label>
-                            <input id="code1" name="code" type="text" class="form__input form__input--text text-right" required />
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

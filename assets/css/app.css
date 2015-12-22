@@ -19,6 +19,9 @@ textarea:focus,
 input:focus {
   outline: 0;
 }
+textarea {
+  resize: none;
+}
 a {
   color: #5893b9;
 }
@@ -39,14 +42,14 @@ a:hover {
   cursor: pointer;
 }
 .nopadding {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .nopadding-l {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 .nopadding-r {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 .clear {
   clear: both;
@@ -221,6 +224,7 @@ a:hover {
   display: inline-block;
   margin-right: 30px;
   width: 330px;
+  vertical-align: top;
 }
 .form__row--fullInline .form__inputBlock:last-child {
   margin-right: 0;
@@ -230,6 +234,9 @@ a:hover {
 }
 .form__row--fullInline .form__inputBlock--middle {
   width: 195px;
+}
+.form__row--fullInline .form__inputBlock--big {
+  width: 270px;
 }
 .form__section {
   border-bottom: 1px solid #5893b9;
@@ -256,6 +263,12 @@ a:hover {
   border: 1px solid #5893b9;
   padding: 8px 15px;
   background: transparent;
+}
+.form__input--textarea {
+  border: 1px solid #5893b9;
+  padding: 8px 15px;
+  background: transparent;
+  height: 127px;
 }
 .form__input--select {
   border: 1px solid #5893b9;
@@ -537,6 +550,10 @@ a:hover {
 .btn:hover {
   color: #212121;
   text-decoration: none;
+}
+.btn--floatLeft {
+  float: left;
+  margin-right: 10px;
 }
 .btn--inline {
   display: inline-block;
@@ -1851,6 +1868,9 @@ a:hover {
 }
 .prefix--smallPadding {
   padding-right: 5px;
+}
+.prefix--full {
+  max-width: 100%;
 }
 /* .affix */
 .affix {
