@@ -596,13 +596,6 @@ a:hover {
   margin-top: 10px;
   background: #01b5b1 !important;
 }
-.btn__myMenu:hover {
-  color: white;
-}
-.btn__myMenu--modalOrder {
-  width: 200px;
-  background: #5893b9;
-}
 .btn--photo {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
@@ -635,12 +628,6 @@ a:hover {
 .btn[disabled] {
   background: #bdbdbd;
   color: white;
-}
-.btn--reject {
-  font-weight: 500;
-  color: white;
-  background: #757575;
-  margin-top: 15px;
 }
 /* mainMenuWrapper */
 .mainMenuWrapper {
@@ -1156,9 +1143,6 @@ a:hover {
   border-right: 0;
   border-top: 0;
 }
-.offersBody__oneColor {
-  background: #f5f5f5;
-}
 .offersBody__row {
   background: white;
 }
@@ -1472,12 +1456,6 @@ a:hover {
   transform: translate(0, 0);
   top: 20%;
 }
-.modal.target .orderDialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  top: 5%;
-}
 .modalBlack {
   display: none;
   background: rgba(0, 0, 0, 0.5);
@@ -1510,118 +1488,6 @@ a:hover {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.4);
   -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.4);
   box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.4);
-}
-.orderDialog {
-  background: white;
-  color: black;
-  width: 943px;
-  padding: 60px;
-  position: fixed;
-  left: 35%;
-  z-index: 11;
-}
-.orderDialog__close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-.orderDialog__status {
-  display: inline-block;
-  color: white;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 10px 15px;
-  background: #01b5b1;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.orderDialog__orderNumber {
-  display: inline-block;
-  font-weight: 300;
-  font-size: 20px;
-  margin-left: 15px;
-}
-.orderDialog__content {
-  margin-top: 25px;
-}
-.aboutOrder textarea {
-  margin-top: 15px;
-  padding: 15px;
-  display: block;
-  line-height: 20px;
-  height: 220px;
-  width: 100%;
-  border: 1px solid #5893b9;
-  resize: none;
-}
-.aboutOrder__userBlock {
-  display: inline-block;
-  margin-bottom: -35px;
-}
-.aboutOrder__userBlock a {
-  font-weight: 300;
-  position: absolute;
-  font-size: 18px;
-  color: black;
-  line-height: -30px;
-}
-.aboutOrder__userBlock span {
-  margin-right: 15px;
-  font-weight: 300;
-  color: #616161;
-}
-.aboutOrder__comments {
-  margin-top: 15px;
-  font-weight: 300;
-}
-.aboutOrder__comments span {
-  display: block;
-  padding-bottom: 10px;
-}
-.aboutOrder__buttonWrapper {
-  float: left;
-  width: 200px;
-  margin-right: 20px;
-}
-.aboutOrder__buttons {
-  padding-top: 30px;
-  overflow: hidden;
-}
-.aboutOrder__buttons span {
-  font-weight: 300;
-}
-.aboutLoan__item {
-  padding-bottom: 10px;
-}
-.aboutLoan__item--name {
-  display: inline-block;
-  width: 145px;
-  font-weight: 300;
-}
-.aboutLoan__item--value {
-  font-weight: 300;
-  font-size: 18px;
-}
-.aboutLoan__notes {
-  font-weight: 300;
-}
-.aboutLoan__notes ul {
-  font-size: 18px;
-  color: #01b5b1;
-  margin-bottom: 35px;
-}
-.aboutLoan__notes ul li {
-  margin-bottom: 10px;
-}
-.aboutLoan__notes ul li span {
-  color: black;
-}
-.aboutLoan__notes ul li a {
-  color: black;
-}
-.ages {
-  line-height: 55px;
 }
 #close {
   display: none;
@@ -1868,31 +1734,25 @@ a:hover {
   padding: 0;
 }
 .accountMenu__item {
-  display: block;
-  width: 16.66%;
-  height: 60px;
+  width: 20%;
   float: left;
   text-align: center;
 }
 .accountMenu__item--lastItem {
+  width: 19.95%;
   border-right: none;
 }
 .accountMenu__item a {
   display: block;
   background: #365280;
   width: 100%;
-  height: 100%;
-  padding: 15px 30px;
+  padding: 20px 30px;
   color: white;
   border-right: 1px solid #d5dbe4;
   border-bottom: 1px solid #94a6c2;
   font-family: 'Exo 2', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  text-decoration: none;
-}
-.accountMenu__item--messages a {
-  padding: 15px 10px;
 }
 .accountMenu__item a:active {
   background: #3f6095;
@@ -1927,12 +1787,12 @@ a:hover {
   width: 100%;
 }
 .userList {
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 .userList__item {
-  list-style-type: none;
   color: white;
   width: 275px;
   background: #365280;
@@ -2177,12 +2037,6 @@ a:hover {
   margin-right: 15px;
   margin-left: 15px;
 }
-.avatarPhoto--modalOrders {
-  display: inline-block;
-  margin-right: 10px;
-  width: 70px;
-  height: 70px;
-}
 /*
 
 
@@ -2222,14 +2076,11 @@ MyPage
   margin-right: 5px;
   margin-left: 5px;
 }
+.myMenu__info--good img {
+  margin-top: -5px;
+}
 .myMenu__info--bad {
   color: #f44336;
-}
-.myMenu__info--modalBad {
-  font-size: 14px;
-}
-.myMenu__info--modalBad img {
-  display: inline-block;
 }
 .myMenu__info--name {
   display: inline;
@@ -2251,15 +2102,6 @@ MyPage
   font: 18px 'Exo 2', sans-serif;
   font-weight: 300;
   text-decoration: underline;
-}
-.myMenu__info--modalOrderName {
-  display: block;
-  margin-top: 5px;
-  font-size: 14px;
-}
-.myMenu__info--modalOrderValue {
-  font-size: 14px;
-  color: black;
 }
 .userHeader {
   padding-left: 30px;
@@ -2364,7 +2206,6 @@ BlackList
 .userLogin {
   color: white;
   font-weight: 300;
-  text-decoration: none;
 }
 .userLogin:hover {
   color: white;
@@ -2598,66 +2439,3 @@ BlackList
   width: 200px;
 }
 /*        */
-.requests {
-  position: relative;
-}
-.requests__filter {
-  display: block;
-  width: 160px;
-  float: left;
-  padding-bottom: 20px;
-}
-.requests__select {
-  position: absolute;
-  top: 0;
-  right: 0;
-  float: right;
-  width: 250px;
-}
-input[type="radio"] {
-  display: none;
-}
-input[type="radio"]:checked + label:after {
-  width: 8px;
-  height: 8px;
-  left: 4px;
-  margin-top: -4px;
-}
-.LabelRadio {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 14px;
-  color: white;
-  font-weight: 300;
-  position: relative;
-  padding-left: 30px;
-  margin: 5px 0;
-}
-.LabelRadio:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 0;
-  top: 50%;
-  margin-top: -8px;
-  border: 1px solid white;
-  border-radius: 50%;
-}
-.LabelRadio:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 8px;
-  top: 50%;
-  margin-top: 0;
-  background: white;
-  border-radius: 50%;
-  -webkit-transition: all 0.1s ease 0s;
-  -moz-transition: all 0.1s ease 0s;
-  -ms-transition: all 0.1s ease 0s;
-  -o-transition: all 0.1s ease 0s;
-}

@@ -238,3 +238,18 @@ $(function(){
         $(this).parent().find('.hidden').slideToggle();
     });
 });
+
+//Userlist changes
+$(".userList__item").on('click',function(){
+        var activeUser = $('.userList__item--activeuser');
+
+        if(!($(this).hasClass("userList__item--activeuser"))) {
+            $(this).insertBefore($('.userList__item--activeuser'));
+            activeUser.removeClass('userList__item--activeuser');
+            $(this).addClass('userList__item--activeuser');
+        }
+    });
+
+
+//Seclects
+$('select').selectric();
