@@ -620,6 +620,23 @@ a:hover {
   width: 200px;
   background: #5893b9;
 }
+.btn--order {
+  border: 1px solid #5893b9;
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.btn--order:hover {
+  background: #01b5b1 !important;
+}
+.btn--orderActive {
+  background: #01b5b1 !important;
+  border: none;
+}
+.btn--inWork {
+  width: 200px;
+  margin-top: 10px;
+}
 .btn--photo {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
@@ -1185,6 +1202,9 @@ a:hover {
 .offersBody__row:hover {
   background: #d8f7f6;
 }
+.offersBody .offersRow:hover {
+  background: #d8f7f6;
+}
 .offersBody__block {
   border: 1px solid #5893b9;
   padding: 12px 18px;
@@ -1562,6 +1582,21 @@ a:hover {
 .orderDialog__content {
   margin-top: 25px;
 }
+.newDealDialog__delete {
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 115px;
+}
+.newDealDialog__delete img {
+  margin-right: 15px;
+}
+.newDealDialog__delete a {
+  color: #263a59;
+  text-decoration: none;
+}
+.newDealDialog__delete a:hover {
+  text-decoration: underline;
+}
 .aboutOrder textarea {
   margin-top: 15px;
   padding: 15px;
@@ -1596,6 +1631,12 @@ a:hover {
   display: block;
   padding-bottom: 10px;
 }
+.aboutOrder__comments--deal {
+  margin-top: 0;
+}
+.aboutOrder__comments--inWork {
+  line-height: 20px;
+}
 .aboutOrder__buttonWrapper {
   float: left;
   width: 200px;
@@ -1624,6 +1665,7 @@ a:hover {
   font-weight: 300;
 }
 .aboutLoan__notes ul {
+  margin-top: 5px;
   font-size: 18px;
   color: #01b5b1;
   margin-bottom: 35px;
@@ -1636,6 +1678,12 @@ a:hover {
 }
 .aboutLoan__notes ul li a {
   color: black;
+}
+.aboutLoan__notes--dealFiles {
+  margin-top: 30px;
+}
+.aboutLoan__notes--dealNotes {
+  margin-top: 50px;
 }
 .ages {
   line-height: 55px;
@@ -2448,7 +2496,7 @@ BlackList
   text-align: center;
   font: 0/0 a;
   /* IE Fix */
-  *font: 0.6666666666666666px Lucida Sans Unicode, Arial Unicode MS, Arial;
+  *font: 0.66666667px Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
 .selectric .button:after {
   content: " ";
@@ -2627,12 +2675,19 @@ BlackList
   float: left;
   padding-bottom: 20px;
 }
+.requests__filter--deals {
+  width: 300px;
+}
 .requests__select {
   position: absolute;
   top: 0;
   right: 0;
   float: right;
   width: 250px;
+}
+.requests__buttons {
+  padding-top: 10px;
+  float: right;
 }
 input[type="radio"] {
   display: none;
