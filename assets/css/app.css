@@ -392,6 +392,36 @@ a:hover {
   -ms-transition: all 0.1s ease 0s;
   -o-transition: all 0.1s ease 0s;
 }
+.form__label--checkboxWhite {
+  font-weight: 300;
+}
+.form__label--checkboxWhite:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 13px;
+  margin-top: -8px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.form__label--checkboxWhite:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 8px;
+  margin-top: 0;
+  background: white;
+  border-radius: 3px;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  -ms-transition: all 0.1s ease 0s;
+  -o-transition: all 0.1s ease 0s;
+}
 /* mainPromo */
 .mainPromo {
   margin-top: 20px;
@@ -1579,6 +1609,9 @@ a:hover {
   font-size: 20px;
   margin-left: 15px;
 }
+.orderDialog__orderNumber--loan {
+  margin: 0;
+}
 .orderDialog__content {
   margin-top: 25px;
 }
@@ -1637,13 +1670,16 @@ a:hover {
 .aboutOrder__comments--inWork {
   line-height: 20px;
 }
+.aboutOrder__comments--loan {
+  line-height: 20px;
+}
 .aboutOrder__buttonWrapper {
   float: left;
   width: 200px;
   margin-right: 20px;
 }
 .aboutOrder__buttons {
-  padding-top: 30px;
+  padding-top: 50px;
   overflow: hidden;
 }
 .aboutOrder__buttons span {
@@ -1678,6 +1714,9 @@ a:hover {
 }
 .aboutLoan__notes ul li a {
   color: black;
+}
+.aboutLoan__notes--loan li {
+  margin-bottom: 7px !important;
 }
 .aboutLoan__notes--dealFiles {
   margin-top: 30px;
@@ -1944,6 +1983,12 @@ a:hover {
 }
 .accountMenu__item--lastItem {
   border-right: none;
+}
+.accountMenu__item--searchDeal {
+  width: 280px;
+}
+.accountMenu__item--searchDeal a {
+  border: none !important;
 }
 .accountMenu__item a {
   display: block;
@@ -2738,4 +2783,126 @@ input[type="radio"]:checked + label:after {
 }
 .testclass {
   border: none;
+}
+.searchDealFilters {
+  color: white;
+}
+.searchDealFilters .row {
+  margin: 0;
+}
+.searchDealFilters .col-md-3 {
+  padding: 0;
+}
+.searchDealFilters .col-md-4 {
+  padding: 0;
+  margin: 0;
+}
+.searchDealFilters a {
+  color: white;
+  font-weight: 300;
+}
+.searchDealFilters__title {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.searchDealFilters__body {
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.searchDealFilters__body input {
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin: 0 5px;
+  color: black;
+  padding: 5px;
+  text-align: right;
+}
+.searchDealFilters__body input:first-child {
+  margin-right: 20px;
+}
+.searchDealFilters__sum input {
+  width: 80px !important;
+}
+.searchDealFilters__time {
+  padding-left: 4.4% !important;
+}
+.searchDealFilters__time input {
+  width: 45px;
+}
+.searchDealFilters__profitability {
+  padding-left: 4.4% !important;
+}
+.searchDealFilters__profitability input {
+  width: 45px;
+}
+.searchDealFilters__facialAppearance {
+  margin-top: -5px;
+}
+.searchDealFilters__userRating {
+  padding-left: 4.4% !important;
+}
+.searchDealFilters__userRating input {
+  width: 45px;
+}
+.searchDealFilters__extendSearch {
+  text-align: right;
+}
+.searchDealFilters__location {
+  padding-left: 4.4% !important;
+}
+.searchDealFilters__location .selectric {
+  border: 1px solid #5893b9;
+  background: white;
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 7px;
+}
+.searchDealFilters__location .selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 30px 0 0;
+  padding: 5px 20px;
+  line-height: 18px;
+  color: black;
+  min-height: 18px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.searchDealFilters__location .selectric .button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+  height: 30px;
+}
+.searchDealFilters__location .selectric .button:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #01b5b1;
+  border-bottom: none;
+}
+.searchDealFilters__location .selectric-items li {
+  display: block;
+  padding: 5px 20px;
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid #b6b6b6;
+  font-weight: 300;
+  font-size: 14px;
 }

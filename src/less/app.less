@@ -517,6 +517,36 @@ a {
 				.transition(all 0.1s ease 0s);
 			}
 		}
+
+		&--checkboxWhite {
+			font-weight: @light;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				left: 0;
+				top: 13px;
+				margin-top: -8px;
+				border: 1px solid white;
+				border-radius: 4px;
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 0;
+				height: 0;
+				left: 8px;
+				
+				margin-top: 0;
+				background: white;
+				border-radius: 3px;
+				.transition(all 0.1s ease 0s);
+			}
+		}
 	}
 }
 
@@ -1901,6 +1931,10 @@ a {
 		font-weight: @light;
 		font-size: 20px;
 		margin-left: 15px;
+
+		&--loan {
+			margin: 0;
+		}
 	}
 	&__content{
 		margin-top: 25px;
@@ -1976,6 +2010,10 @@ a {
 		&--inWork {
 			line-height: 20px;
 		}
+
+		&--loan {
+			line-height: 20px;
+		}
 	}
 
 	&__buttonWrapper {
@@ -1985,7 +2023,7 @@ a {
 	}
 
 	&__buttons {
-		padding-top: 30px;
+		padding-top: 50px;
 		overflow: hidden;
 
 		span {
@@ -2029,6 +2067,12 @@ a {
 				a{
 					color:black;
 				}
+			}
+		}
+
+		&--loan {
+			li {
+				margin-bottom: 7px !important;
 			}
 		}
 
@@ -2381,6 +2425,14 @@ a {
 			border-right: none;
 		}
 
+		&--searchDeal {
+			width:280px;
+
+			a {
+				
+				border:none !important;
+			}
+		}
 		
 
 		& a {
@@ -3324,4 +3376,150 @@ input[type="radio"] {
 
 .testclass {
 	border: none;
+}
+
+.searchDealFilters {
+	color:white;
+
+	.row {
+		margin: 0;
+	}
+
+	.col-md-3 {
+		padding: 0;
+	}
+	.col-md-4 {
+		padding: 0;
+		margin:0
+	}
+
+	a {
+		color:white;
+		font-weight: @light;
+	}
+
+	&__title {
+		font-weight: @light;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	&__body {
+		font-weight: @light;
+		padding-bottom: 30px;
+
+		input {
+			font-size: 14px;
+			border:none;
+			border-radius: 4px;
+			height: 30px;
+			margin: 0 5px;
+			color:black;
+			padding:5px;
+			text-align: right;
+		}
+
+		input:first-child {
+			margin-right: 20px;
+		}
+	}
+
+	&__sum {
+		input {
+			width: 80px !important;
+		}
+	}
+
+	&__time {
+		padding-left: 4.4% !important;
+
+		input {
+			width: 45px;
+		}
+	}
+
+	&__profitability {
+		padding-left: 4.4% !important;
+
+		input {
+			width: 45px;
+		}
+	}
+
+	&__facialAppearance {
+		margin-top: -5px;
+	}
+
+	&__userRating {
+		padding-left:4.4% !important;
+
+		input {
+			width: 45px;
+		}
+	}
+
+	&__extendSearch {
+		text-align: right;
+	}
+
+	&__location {
+		padding-left: 4.4% !important;
+
+		.selectric {
+  			border: 1px solid @brand-blue;
+  			background: white;
+  			position: relative;
+  			border-radius: 4px;
+  			margin-bottom: 7px;
+		}
+
+		.selectric .label {
+  			display: block;
+  			white-space: nowrap;
+  			overflow: hidden;
+  			text-overflow: ellipsis;
+  			margin: 0 30px 0 0;
+  			padding: 5px 20px;
+  			line-height: 18px;
+  			color: black;
+  			min-height: 18px;
+  			font-family: 'Exo 2', sans-serif;
+  			font-weight: @light;
+  			font-size:14px;
+  			border-radius: 4px;
+		}
+
+		.selectric .button {
+ 			display: block;
+  			position: absolute;
+  			right: 0;
+  			top: 0;
+  			width: 42px;
+  			height: 30px;
+		}
+
+		.selectric .button:after {
+  				content: " ";
+  				position: absolute;
+ 	 			top: 0;
+  				right: 0;
+  				bottom: 0;
+  				left: 0;
+  				margin: auto;
+  				width: 0;
+  				height: 0;
+  				border: 5px solid transparent;
+  				border-top-color: @brand-secondary;
+  				border-bottom: none;
+		}
+		.selectric-items li {
+  			display: block;
+  			padding: 5px 20px;
+  			color: black;
+  			cursor: pointer;
+  			border-bottom: 1px solid #b6b6b6;
+  			font-weight: @light;
+  			font-size:14px;
+		}
+	}
 }
