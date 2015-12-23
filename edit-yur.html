@@ -343,60 +343,18 @@
                 <small>Вы можете загружать файлы в формате tiff, png, gif, jpg, bmp или pdf произвольного размера.</small>
             </header>
             <div class="hidden">
+
                 <div class="docsSection">
                     <div class="docsSection__row">
                         <div class="docsSection__col">
                             <div class="docsSection__name">
                                 <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-1" checked />
-                                <label class="form__label form__label--checkbox" for="edit-1">Имя в Skype:</label>
+                                <label class="form__label form__label--checkbox" for="edit-1">Численность сотрудников:</label>
                             </div>
                             <div class="docsSection__body active">
-                                <input name="skype" type="text" class="form__input form__input--text docsSection__input--middle" />
-                            </div>
-                        </div>
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-2" />
-                                <label class="form__label form__label--checkbox" for="edit-2">Страница в Facebook:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <input name="facebook" type="text" class="form__input form__input--text docsSection__input--middle" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="docsSection__row">
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-3" />
-                                <label class="form__label form__label--checkbox" for="edit-3">Страница ВКонтакте:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <input name="vk" type="text" class="form__input form__input--text docsSection__input--middle" />
-                            </div>
-                        </div>
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-4" />
-                                <label class="form__label form__label--checkbox" for="edit-4">Страница в Одноклассниках:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <input name="odnkls" type="text" class="form__input form__input--text docsSection__input--middle" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="docsSection">
-                    <div class="docsSection__row">
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-5" />
-                                <label class="form__label form__label--checkbox" for="edit-5">Семейное положение:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--middle">
-                                    <option value="1" selected>Холост</option>
-                                    <option value="2">Заряжен</option>
-                                </select>
+                                <label class="docsSection__label">Количество</label>
+                                <input name="staffcount" type="text" class="form__input form__input--text docsSection__input--shortNum text-right" />
+
                                 <div class="docsSection__docs">
                                     <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
                                     <div class="file">
@@ -412,14 +370,96 @@
                         </div>
                         <div class="docsSection__col">
                             <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-6" />
-                                <label class="form__label form__label--checkbox" for="edit-6">Иждивенцы:</label>
+                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-2" />
+                                <label class="form__label form__label--checkbox" for="edit-2">Разрешения и лицензии:</label>
                             </div>
                             <div class="docsSection__body">
-                                <label class="docsSection__label">Количество</label>
-                                <input name="izhd" type="text" class="form__input form__input--text docsSection__input--small text-right" />
-
-                                <div class="docsSection__docs">
+                                <div class="docsSection__docs docsSection__docs--left">
+                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">паспорт.jpg</a>
+                                    </div>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">прописка.jpg</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="docsSection__row">
+                        <div class="docsSection__col">
+                            <div class="docsSection__name">
+                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-3" />
+                                <label class="form__label form__label--checkbox" for="edit-3">Открытые расчетные счета:</label>
+                            </div>
+                            <div class="docsSection__body">
+                                <div class="docsSection__docs docsSection__docs--left">
+                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">паспорт.jpg</a>
+                                    </div>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">прописка.jpg</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="docsSection__col">
+                            <div class="docsSection__name">
+                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-4" />
+                                <label class="form__label form__label--checkbox" for="edit-4">
+                                    Кредитная история за последние 3 года <small>(кредиты
+                                    собственников на ведение бизнеса и потребительские цели):</small>
+                                </label>
+                            </div>
+                            <div class="docsSection__body">
+                                <div class="docsSection__docs docsSection__docs--left">
+                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">паспорт.jpg</a>
+                                    </div>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">прописка.jpg</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="docsSection__row">
+                        <div class="docsSection__col">
+                            <div class="docsSection__name">
+                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-5" />
+                                <label class="form__label form__label--checkbox" for="edit-5">Местонахождение бизнеса:</label>
+                            </div>
+                            <div class="docsSection__body">
+                                <div class="docsSection__docs docsSection__docs--left">
+                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">паспорт.jpg</a>
+                                    </div>
+                                    <div class="file">
+                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
+                                        <a class="file__name" href="">прописка.jpg</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="docsSection__col">
+                            <div class="docsSection__name">
+                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-6" />
+                                <label class="form__label form__label--checkbox" for="edit-6">
+                                    Транспорт <small>(включая личный транспорт собственников бизнеса):</small>
+                                </label>
+                            </div>
+                            <div class="docsSection__body">
+                                <div class="docsSection__docs docsSection__docs--left">
                                     <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
                                     <div class="file">
                                         <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
@@ -437,14 +477,14 @@
                         <div class="docsSection__col">
                             <div class="docsSection__name">
                                 <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-7" />
-                                <label class="form__label form__label--checkbox" for="edit-7">Образование:</label>
+                                <label class="form__label form__label--checkbox" for="edit-7">
+                                    Страхование имущества заявителя <small>(вид, сумма,
+                                    выгодоприобретатель, наименование страховой компании,
+                                    срок страхования):</small>
+                                </label>
                             </div>
                             <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--middle">
-                                    <option value="1" selected>Высшее</option>
-                                    <option value="2">Низшее</option>
-                                </select>
-                                <div class="docsSection__docs">
+                                <div class="docsSection__docs docsSection__docs--left">
                                     <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
                                     <div class="file">
                                         <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
@@ -460,13 +500,13 @@
                         <div class="docsSection__col">
                             <div class="docsSection__name">
                                 <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-8" />
-                                <label class="form__label form__label--checkbox" for="edit-8">Проживание:</label>
+                                <label class="form__label form__label--checkbox" for="edit-8">
+                                    Кем является заявитель <small>(Эмитентом эмиссионных ценных бумаг,
+                                    управляющей компаний, и т.п.):</small>
+                                </label>
                             </div>
                             <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--middle">
-                                    <option value="1" selected>Проживаю</option>
-                                    <option value="2">Уже не проживаю</option>
-                                </select>
+                                <textarea name="whois" class="form__input--textarea"></textarea>
                                 <div class="docsSection__docs">
                                     <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
                                     <div class="file">
@@ -481,17 +521,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="docsSection">
                     <div class="docsSection__row">
                         <div class="docsSection__col">
                             <div class="docsSection__name">
                                 <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-9" />
-                                <label class="form__label form__label--checkbox" for="edit-9">Род занятий:</label>
+                                <label class="form__label form__label--checkbox" for="edit-9">Балансовые показатели:</label>
                             </div>
                             <div class="docsSection__body">
-                                <input name="" type="text" class="form__input form__input--text docsSection__input--middle" />
-
+                                <select name="balance" class="form__input form__input--select docsSection__input--middle">
+                                    <option value="1" selected="">За 1 год</option>
+                                    <option value="2">За все года</option>
+                                </select>
                                 <div class="docsSection__docs">
                                     <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
                                     <div class="file">
@@ -508,14 +548,10 @@
                         <div class="docsSection__col">
                             <div class="docsSection__name">
                                 <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-10" />
-                                <label class="form__label form__label--checkbox" for="edit-10">Должность:</label>
+                                <label class="form__label form__label--checkbox" for="edit-10">Сведения об учредителях/руководителях/участниках:</label>
                             </div>
                             <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--middle">
-                                    <option value="1" selected>Хорошая</option>
-                                    <option value="2">Плохих не бывает</option>
-                                </select>
-                                <div class="docsSection__docs">
+                                <div class="docsSection__docs docsSection__docs--left">
                                     <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
                                     <div class="file">
                                         <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
@@ -533,83 +569,13 @@
                         <div class="docsSection__col">
                             <div class="docsSection__name">
                                 <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-11" />
-                                <label class="form__label form__label--checkbox" for="edit-11">Среднемесячный доход:</label>
+                                <label class="form__label form__label--checkbox" for="edit-11">
+                                    Информация о связанных компаниях <small>(участие, ведение
+                                    совместной деятельности):</small>
+                                </label>
                             </div>
                             <div class="docsSection__body">
-                                <input name="" type="text" class="form__input form__input--text docsSection__input--short" />
-                                <span class="affix">руб.</span>
-
-                                <div class="docsSection__docs">
-                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">паспорт.jpg</a>
-                                    </div>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">прописка.jpg</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-12" />
-                                <label class="form__label form__label--checkbox" for="edit-12">Кредитовались ли вы раньше:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--select-small">
-                                    <option value="1" selected>Да</option>
-                                    <option value="2">Нет</option>
-                                </select>
-                                <div class="docsSection__docs">
-                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">паспорт.jpg</a>
-                                    </div>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">прописка.jpg</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="docsSection__row">
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-13" />
-                                <label class="form__label form__label--checkbox" for="edit-13">Среднемесячный расход по отношению к доходу:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <input name="" type="text" class="form__input form__input--text docsSection__input--short" />
-                                <span class="affix">%</span>
-
-                                <div class="docsSection__docs">
-                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">паспорт.jpg</a>
-                                    </div>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">прописка.jpg</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-14" />
-                                <label class="form__label form__label--checkbox" for="edit-14">Есть ли непогашенные кредиты:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--select-small">
-                                    <option value="1" selected>Да</option>
-                                    <option value="2">Нет</option>
-                                </select>
-                                <div class="docsSection__docs">
+                                <div class="docsSection__docs docsSection__docs--left">
                                     <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
                                     <div class="file">
                                         <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
@@ -624,130 +590,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="docsSection">
-                    <div class="docsSection__row">
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-15" />
-                                <label class="form__label form__label--checkbox" for="edit-15">Имеются ли решения суда, которые вы не исполнили:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--select-small">
-                                    <option value="1" selected>Да</option>
-                                    <option value="2">Нет</option>
-                                </select>
-                                <div class="docsSection__docs">
-                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">паспорт.jpg</a>
-                                    </div>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">прописка.jpg</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-16" />
-                                <label class="form__label form__label--checkbox" for="edit-16">Находитесь ли вы под судом или следствием:</label>
-                            </div>
-                            <div class="docsSection__body">
-                                <select name="marriage" class="form__input form__input--select docsSection__input--select-small">
-                                    <option value="1" selected>Да</option>
-                                    <option value="2">Нет</option>
-                                </select>
-                                <div class="docsSection__docs">
-                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">паспорт.jpg</a>
-                                    </div>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">прописка.jpg</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="docsSection">
-                    <div class="docsSection__row">
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-17" />
-                                <label class="form__label form__label--checkbox" for="edit-17">Свидетельство о регистрации автомобиля:</label>
-                            </div>
-                            <div class="docsSection__body">
 
-                                <input name="" type="text" class="form__input form__input--text docsSection__input--serial" placeholder="Серия" />
-                                <input name="" type="text" class="form__input form__input--text docsSection__input--number" placeholder="Номер" />
-                                <div class="docsSection__docs">
-                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">паспорт.jpg</a>
-                                    </div>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">прописка.jpg</a>
-                                    </div>
-                                </div>
-
-                                <div class="clear"></div>
-
-                                <div class="docsSection__inputBlock docsSection__inputBlock--date">
-                                    <label class="form__label form__label--text">Когда выдано:</label>
-                                    <input name="" type="text" class="form__input form__input--text" placeholder="ДД.ММ.ГГГГ" />
-                                </div>
-                                <div class="docsSection__inputBlock docsSection__inputBlock--who">
-                                    <label class="form__label form__label--text">Кем выдано:</label>
-                                    <input name="" type="text" class="form__input form__input--text" />
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="docsSection__col">
-                            <div class="docsSection__name">
-                                <input class="form__input form__input--checkbox" type="checkbox" name="" value="" id="edit-18" />
-                                <label class="form__label form__label--checkbox" for="edit-18">Свидетельство о регистрации собственности:</label>
-                            </div>
-                            <div class="docsSection__body">
-
-                                <span class="prefix prefix--smallPadding">Среднемесячный доход</span>
-                                <input name="" type="text" class="form__input form__input--text docsSection__input--cost" />
-                                <span class="affix affix--smallPadding">р.</span>
-
-                                <div class="docsSection__docs">
-                                    <button type="button" class="btn btn--full btn--primary btn--straight btn--photo btn--photoSmall">Загрузить</button>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">паспорт.jpg</a>
-                                    </div>
-                                    <div class="file">
-                                        <a class="file__delete" href="javacript:void(0)" onclick="return confirm('Удалить?')">x</a>
-                                        <a class="file__name" href="">прописка.jpg</a>
-                                    </div>
-                                </div>
-
-                                <div class="clear"></div>
-
-                                <div class="docsSection__inputBlock docsSection__inputBlock--date">
-                                    <label class="form__label form__label--text">Когда выдано:</label>
-                                    <input name="" type="text" class="form__input form__input--text" placeholder="ДД.ММ.ГГГГ" />
-                                </div>
-                                <div class="docsSection__inputBlock docsSection__inputBlock--who">
-                                    <label class="form__label form__label--text">Кем выдано:</label>
-                                    <input name="" type="text" class="form__input form__input--text" />
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
