@@ -671,6 +671,11 @@ a:hover {
   width: 200px;
   margin-top: 10px;
 }
+.btn--writeMe {
+  padding: 15px 85px;
+  font-size: 18px;
+  font-weight: 300;
+}
 .btn--photo {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
@@ -696,6 +701,7 @@ a:hover {
   padding: 15px 67px;
   margin-top: 35px;
   font-weight: 300;
+  margin-bottom: 35px;
 }
 .btn--primary {
   background-color: #3f6095;
@@ -1991,6 +1997,19 @@ a:hover {
   width: 100%;
   padding: 0;
 }
+.accountMenu__page {
+  color: #3f6095 !important;
+  border: none !important;
+  background: none !important;
+  width: 20px !important;
+  height: 30px !important;
+  display: inline-block !important;
+  padding: 15px 0  !important;
+  margin-right: 10px ;
+  text-decoration: underline !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
 .accountMenu__item {
   display: block;
   width: 16.66%;
@@ -2009,6 +2028,7 @@ a:hover {
 }
 .accountMenu__item--pages {
   text-align: right;
+  width: 578px;
 }
 .accountMenu__item a {
   display: block;
@@ -2530,12 +2550,14 @@ BlackList
 .selectric-responsive {
   width: 100%;
 }
+/* Стиль основного SELECTA  */
 .selectric {
   border: 1px solid white;
   background: inherit;
   position: relative;
   border-radius: 0;
 }
+/* Стиль надписи SELECTA  */
 .selectric .label {
   display: block;
   white-space: nowrap;
@@ -2550,6 +2572,7 @@ BlackList
   font-weight: 300;
   font-size: 18px;
 }
+/* Стиль кнопки SELECTA  */
 .selectric .button {
   display: block;
   position: absolute;
@@ -2563,6 +2586,7 @@ BlackList
   /* IE Fix */
   *font: 0.66666667px Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
+/* Стиль кнопки SELECTA  */
 .selectric .button:after {
   content: " ";
   position: absolute;
@@ -2678,6 +2702,7 @@ BlackList
   line-height: 20px;
   min-height: 20px;
 }
+/* Стиль элементов SELECTA  */
 .selectric-items li {
   display: block;
   padding: 10px 20px;
@@ -3026,4 +3051,30 @@ input[type="radio"]:checked + label:after {
 }
 .checkboxes__entity span {
   font-size: 14px;
+}
+.writeMe__label {
+  font-weight: 300;
+}
+.writeMe__captcha {
+  margin-bottom: 30px;
+}
+.writeMe__message {
+  margin-top: 30px;
+}
+.writeMe__textarea {
+  height: 265px;
+  width: 100%;
+  background: inherit;
+  border: 1px solid #5893b9;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.faq__header {
+  font-size: 18px;
+  font-weight: 300;
+}
+.faq__content {
+  font-size: 18px;
+  font-weight: 300;
 }
