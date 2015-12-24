@@ -272,6 +272,7 @@ a:hover {
   padding: 8px 15px;
   background: transparent;
   height: 127px;
+  font-size: 18px;
 }
 .form__input--select {
   border: 1px solid #5893b9;
@@ -1913,6 +1914,11 @@ a:hover {
 .docsSection__input--short {
   max-width: 193px;
 }
+.docsSection__input--shortNum {
+  max-width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .docsSection__input--small {
   max-width: 58px;
 }
@@ -1942,6 +1948,9 @@ a:hover {
 .docsSection__docs {
   width: 165px;
   float: right;
+}
+.docsSection__docs--left {
+  float: left;
 }
 .docsSection__docs .btn {
   max-width: 135px;
