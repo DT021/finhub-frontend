@@ -237,10 +237,16 @@ $(function(){
     $('.form__sectionHeader').click(function(){
         $(this).parent().find('.hidden').slideToggle();
     });
+    $('.form__section').each(function(){
+        $('input', this).last().focus(function(){
+            $(this).parents('.form__section').next('.form__section').find('.hidden').slideDown();
+        });
+    });
 });
 
 //Userlist changes
-$(".userList__item").on('click',function(){
+$(function(){
+    $(".userList__item").on('click',function(){
         var activeUser = $('.userList__item--activeuser');
 
         if(!($(this).hasClass("userList__item--activeuser"))) {
@@ -249,7 +255,9 @@ $(".userList__item").on('click',function(){
             $(this).addClass('userList__item--activeuser');
         }
     });
-
+});
 
 //Seclects
-$('select').selectric();
+$(function(){
+    $('select').selectric();
+});
