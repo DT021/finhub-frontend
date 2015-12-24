@@ -54,6 +54,9 @@ a:hover {
 .clear {
   clear: both;
 }
+.text-right {
+  text-align: right;
+}
 .logo {
   display: block;
   max-width: 254px;
@@ -687,6 +690,11 @@ a:hover {
 }
 .btn--photoSmall:before {
   margin-right: 5px;
+}
+.btn--createOrder {
+  padding: 15px 67px;
+  margin-top: 35px;
+  font-weight: 300;
 }
 .btn--primary {
   background-color: #3f6095;
@@ -1990,6 +1998,9 @@ a:hover {
 .accountMenu__item--searchDeal a {
   border: none !important;
 }
+.accountMenu__item--pages {
+  text-align: right;
+}
 .accountMenu__item a {
   display: block;
   background: #365280;
@@ -2784,6 +2795,12 @@ input[type="radio"]:checked + label:after {
 .testclass {
   border: none;
 }
+/*
+
+	Основные стили страницы поиска заявки
+
+
+*/
 .searchDealFilters {
   color: white;
 }
@@ -2904,5 +2921,100 @@ input[type="radio"]:checked + label:after {
   cursor: pointer;
   border-bottom: 1px solid #b6b6b6;
   font-weight: 300;
+  font-size: 14px;
+}
+/*
+
+ 	Страница создания заявки
+
+
+*/
+.createApp {
+  position: relative;
+}
+.createApp textarea {
+  position: absolute;
+  top: 120px;
+  left: 465px;
+  width: 58%;
+  height: 160px;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid #5893b9;
+  background: transparent;
+  color: #616161;
+  padding: 10px;
+}
+.createApp__inputName {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  width: 22.2%;
+}
+.createApp__inputValue {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  width: 16.8%;
+}
+.createApp__inputValue input {
+  text-align: right;
+  height: 38px;
+  width: 100px;
+  border: 1px solid #5893b9;
+  padding: 10px;
+  background: transparent;
+  margin-right: 15px;
+}
+.createApp__inputWrap {
+  display: block;
+  margin-bottom: 20px;
+}
+.createApp__select {
+  display: inline-block;
+  width: 290px;
+  vertical-align: top;
+}
+.createApp__select .selectric {
+  border: 1px solid #5893b9;
+}
+.createApp__select .selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 30px 0 0;
+  color: #616161;
+  min-height: 18px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.checkboxes__mainHeader {
+  font-size: 27px;
+  font-weight: 300;
+  margin: 40px 0;
+}
+.checkboxes__headers {
+  font-size: 20px;
+  font-weight: 500;
+}
+.checkboxes__individual {
+  font-weight: 300;
+  padding-left: 25px;
+}
+.checkboxes__individual label {
+  margin-top: 15px;
+}
+.checkboxes__entity {
+  font-weight: 300;
+}
+.checkboxes__entity label {
+  margin-top: 15px;
+}
+.checkboxes__entity span {
   font-size: 14px;
 }
