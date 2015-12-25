@@ -1514,12 +1514,20 @@ a:hover {
   background-image: url('../img/icon-message-white.png');
   background-repeat: no-repeat;
   background-position: 18px 50%;
+  font-weight: 300;
+}
+.userCard__btn--modal {
+  margin-top: 10px;
+}
+.userCard__btn--contract {
+  background: #3f6095;
+  padding: 7px 35px;
 }
 .userCard__value {
   color: #212121;
 }
 .userCard__vote {
-  text-decoration: none;
+  text-decoration: none !important;
   min-height: 23px;
   margin-left: 5px;
 }
@@ -1527,14 +1535,14 @@ a:hover {
   background: transparent url('../img/icon-vote-up.png') 0 3px no-repeat;
   padding-left: 25px;
   display: inline-block;
-  color: #0da4ab;
+  color: #0da4ab !important;
   padding-top: 5px;
 }
 .userCard__vote--down {
   background: transparent url('../img/icon-vote-down.png') 0 3px no-repeat;
   padding-left: 25px;
   display: inline-block;
-  color: #d04949;
+  color: #d04949 !important;
 }
 .userCard__accessDenied {
   color: #3f6095;
@@ -2363,9 +2371,11 @@ MyPage
 }
 .myMenu__buttons img {
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 15px;
   margin-right: 10px;
+  margin-top: -3px;
 }
 .myMenu__info {
   margin-top: 10px;
@@ -2827,7 +2837,7 @@ input[type="radio"]:checked + label:after {
   -o-transition: all 0.1s ease 0s;
 }
 .testclass {
-  border: none;
+  border: 1px solid green;
 }
 /*
 

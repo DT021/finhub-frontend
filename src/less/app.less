@@ -1832,6 +1832,15 @@ a {
 		background-image: url('../img/icon-message-white.png');
 		background-repeat: no-repeat;
 		background-position: 18px 50%;
+		font-weight: @light;
+
+		&--modal {
+			margin-top: 10px;
+		}
+
+		&--contract {
+			background: @brand-primary;
+			padding: 7px 35px;		}
 	}
 
 	&__value {
@@ -1839,7 +1848,7 @@ a {
 	}
 
 	&__vote {
-		text-decoration: none;
+		text-decoration: none !important;
 		min-height: 23px;
 		margin-left: 5px;
 
@@ -1847,7 +1856,7 @@ a {
 			background: transparent url('../img/icon-vote-up.png') 0 3px no-repeat;
 			padding-left: 25px;
 			display: inline-block;
-			color: #0da4ab;
+			color: #0da4ab !important;
 			padding-top: 5px;
 		}
 
@@ -1855,7 +1864,7 @@ a {
 			background: transparent url('../img/icon-vote-down.png') 0 3px no-repeat;
 			padding-left: 25px;
 			display: inline-block;
-			color: #d04949;
+			color: #d04949 !important;
 		}
 	}
 	
@@ -2889,12 +2898,14 @@ MyPage
 	}
 
 	&__buttons {
-
+		
 		img {
 				display: inline-block;
+				vertical-align: middle;
 				width:20px;
 				height: 15px;
 				margin-right:10px;
+				margin-top: -3px;
 			}
 	}
 
@@ -3429,7 +3440,7 @@ input[type="radio"] {
 }
 
 .testclass {
-	border: none;
+	border: 1px solid green;
 }
 
 

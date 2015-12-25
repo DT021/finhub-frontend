@@ -134,17 +134,17 @@
             <div class="requests">
                 <div class="requests__filter">
                 
-                    <input class="radioButton" type="radio" name="type" value="1" id="smalltype1" />
+                    <input class="radioButton" type="radio" name="loans" value="1" id="smalltype1" />
                     <label class="LabelRadio LabelRadio--filter" for="smalltype1">Получение займа</label><br>
-                        <input type="radio" name="type" value="2" id="smalltype2" />
+                        <input type="radio" name="loans" value="2" id="smalltype2" />
                         <label class="LabelRadio LabelRadio--filter" for="smalltype2">Выдача займа</label>
                 
                 </div>
-                <div class="requests__filter requests__filter--deals">
-                    <input type="radio" name="type" value="3" id="smalltype3" />
-                        <label class="LabelRadio LabelRadio--filter" for="smalltype3">Я заемщик</label>
-                        <input type="radio" name="type" value="4" id="smalltype4" /><br>
-                        <label class="LabelRadio LabelRadio--filter" for="smalltype4">Я заимодавец</label>
+                <div class="requests__filter">
+                    <input type="radio" name="whoyou" value="3" id="smalltype3" />
+                    <label class="LabelRadio LabelRadio--filter" for="smalltype3">Я заемщик</label>
+                    <input type="radio" name="whoyou" value="4" id="smalltype4" />
+                    <label class="LabelRadio LabelRadio--filter" for="smalltype4">Я заимодавец</label>
                 </div>
                 <div class="requests__buttons">
                     <button type="submit" class="btn btn--primary btn--inline btn--order btn--orderActive">В работе</button>
@@ -386,7 +386,7 @@
                 </div><!--row -->
 
                 <div class="orderDialog__close">
-                    <a href=""><img src="assets/img/close2.png"></a>
+                    <a href="#close"><img src="assets/img/close2.png"></a>
                 </div>
             </div><!--modalbody -->
         </div>
@@ -435,20 +435,14 @@
                         <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Отзывы: 
                             <span class="myMenu__info myMenu__info--value myMenu__info--modalOrderValue">45</span>
                         </div>
-                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Оценки:
-                            <span class="myMenu__info myMenu__info--good"> 
-                                <img src="assets/img/good.png"> 40</span>
-                            <span class="myMenu__info myMenu__info--bad">
-                                <img  src="assets/img/bad.png"> 5</span>
+                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName userCard__row_votes">Оценки:
+                            <a class="userCard__vote userCard__vote--up" href="">40</a>
+                            <a class="userCard__vote userCard__vote--down" href="">16</a>
                         </div>
                         </div>
                         <div class="myMenu__buttons">
-                            <button class="btn btn_primary btn__myMenu btn--inWork">
-                                <img src="assets/img/icon_message.png">Написать сообщение
-                            </button>
-                            <button class="btn btn_primary btn__myMenu btn--inWork">
-                                Перейти к договору
-                            </button>
+                            <a class="btn btn--inline btn--primary userCard__btn userCard__btn--modal" href="">Написать сообщение</a>
+                            <a class="btn btn--inline btn--primary userCard__btn userCard__btn--contract userCard__btn--modal" href="">Перейти к договору</a>
                         </div>
                         <div class="aboutOrder__comments aboutOrder__comments--inWork">
                             <span>Комментарий:</span>
@@ -500,7 +494,7 @@
                 </div><!--row -->
 
                 <div class="orderDialog__close">
-                    <a href=""><img src="assets/img/close2.png"></a>
+                    <a href="#close"><img src="assets/img/close2.png"></a>
                 </div>
             </div><!--modalbody -->
         </div>
