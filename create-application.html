@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Заголовок</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:400,300,500,700&subset=latin,cyrillic"
+          type="text/css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/vendor/slick-1.5.9/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/grid12.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <header class="header container">
+    <div class="row">
+        <div class="col-sm-3">
+            <a class="logo" href="/"><img src="assets/img/logo.png" alt=""/></a>
+        </div>
+        <div class="col-sm-6">
+            <div class="mainPromo">
+                <div class="mainPromo__col">
+                    <div class="mainPromo__title">Заголовок акции</div>
+                    <div class="mainPromo__desc">Краткое пояснение акции</div>
+                </div>
+                <div class="mainPromo__col text-right">
+                    <div class="wrapper"><span class="mainPromo__date">c 26 по 30 декабря</span></div>
+                    <a class="mainPromo__link" href="">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 text-right controlBox">
+
+            <!-- notyfy показываем авторизованным пользователям при наличии сообщений (?) -->
+            <!--
+            <a href="" class="notify">
+                <div class="notify__count">15</div>
+            </a>
+            -->
+
+            <div class="headControlsWrapper">
+                <!-- Неавторизованные пользователи увидят ссылки авторизации и регистрации -->
+                <a class="btn btn--inline" href="#modal-login">Вход</a>
+                <a class="btn btn--inline btn--primary" href="">Регистрация</a>
+
+                <!-- Авторизованным пользователям отображаем их логин и меню пользователя -->
+                <!--
+                <a href="" class="btn btn--inline btn--user btn--primary">Devastator3000</a>
+                <div class="headControls">
+                    <div class="headControls__row">
+                        <a class="headControls__link icon icon--message" href="">Сообщения</a>
+                        <a class="headControls__link" href="">
+                            <b class="headControls__num">75<i class="headControls__txt">%</i></b>
+                            Прозрачность
+                        </a>
+                    </div>
+                    <div class="headControls__row">
+                        <a class="headControls__link icon icon--money" href="">Сделки</a>
+                        <a class="headControls__link icon icon--gear" href="">Настройки</a>
+                    </div>
+                    <div class="headControls__row">
+                        <a class="headControls__link" href="">
+                            <b class="headControls__num">20<i class="headControls__txt">бл.</i></b>
+                            Рейтинг
+                        </a>
+                        <a class="headControls__link headControls__link--colorless icon icon--exit" href="">Выход</a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mainMenuWrapper">
+    <nav role="main" class="mainMenu container">
+        <div class="mainMenu__item mainMenu__item_active"><a class="mainMenu__link" href="">Главная</a></div>
+        <div class="mainMenu__item">
+            <a class="mainMenu__link" href="">Мне нужны деньги</a>
+
+            <div class="mainMenu__sub">
+                <a class="mainMenu__sub__link" href="">Первая ссылочка</a>
+                <a class="mainMenu__sub__link" href="">Еще одна ссылка</a>
+                <a class="mainMenu__sub__link" href="">А это очень длинная ссылка</a>
+                <a class="mainMenu__sub__link" href="">Кончик</a>
+            </div>
+        </div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Готов вложить деньги</a></div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Напишите нам</a></div>
+        <div class="mainMenu__item"><a class="mainMenu__link" href="">Помощь</a></div>
+    </nav>
+</div>
+
+<div class="container content">
+
+    <h1>Создание заявки (получить займ)</h1>
+</div>
+    <div class="container createApp">
+        <div class="createApp__inputWrap">
+            <div class="createApp__inputName">
+                Сумма займа:
+            </div>
+            <div class="createApp__inputValue">
+                <input type="text" value="1000"> руб.
+            </div>
+            <div class="createApp__select">
+                <select>
+                    <option>Новые</option>
+                    <option>Ожидают подтверждения</option>
+                    <option>На согласовании</option>
+                    <option>Ждёт оплаты</option>
+                </select>
+            </div>
+        </div>
+        <div class="createApp__inputWrap">
+            <div class="createApp__inputName">
+                Сумма займа:
+            </div>
+            <div class="createApp__inputValue">
+                <input type="text" value="1000"> дней
+            </div>
+            <div class="createApp__select">
+                <select>
+                    <option>Новые</option>
+                    <option>Ожидают подтверждения</option>
+                    <option>На согласовании</option>
+                    <option>Ждёт оплаты</option>
+                </select>
+            </div>
+        </div>
+        <div class="createApp__inputWrap">
+            <div class="createApp__inputName">
+                Сумма займа:
+            </div>
+            <div class="createApp__inputValue">
+                <input type="text" value="1000"> руб.
+            </div>
+            
+        </div>
+        <div class="createApp__inputWrap">
+            <div class="createApp__inputName">
+                Сумма займа:
+            </div>
+            <div class="createApp__inputValue">
+                <input type="text" value="1000"> %
+            </div>
+            
+        </div>
+        <div class="createApp__inputWrap">
+            <div class="createApp__inputName">
+                Сумма займа:
+            </div>
+            <div class="createApp__inputValue">
+                <input type="text" value="1000"> %
+            </div>
+        </div>
+        <textarea>Комментарии</textarea>
+    </div>
+    <div class="container createApp__checkboxes checkboxes">
+        <div class="checkboxes__mainHeader">
+            Готов предоставить следующие данные:
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="checkboxes__headers">
+                    Для физических лиц
+                </div>
+                <div class="checkboxes__individual">
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm1" value="1" id="confirm1" />
+                    <label class="form__label form__label--checkbox" for="confirm1">
+                        Имя в Skype
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm2" value="2" id="confirm2" />
+                    <label class="form__label form__label--checkbox" for="confirm2">
+                        Страница в Facebook
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm3" value="3" id="confirm2" />
+                    <label class="form__label form__label--checkbox" for="confirm3">
+                        Страница Вконтакте
+                    </label>  
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm4" value="4" id="confirm4" />
+                    <label class="form__label form__label--checkbox" for="confirm4">
+                        Страница в Одноклассниках
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm5" value="5" id="confirm5" />
+                    <label class="form__label form__label--checkbox" for="confirm5">
+                        Семейное положение
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm6" value="6" id="confirm6" />
+                    <label class="form__label form__label--checkbox" for="confirm6">
+                        Образование
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm7" value="7" id="confirm7" />
+                    <label class="form__label form__label--checkbox" for="confirm7">
+                        Проживание
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm8" value="8" id="confirm8" />
+                    <label class="form__label form__label--checkbox" for="confirm8">
+                        Иждивенцы
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm9" value="9" id="confirm9" />
+                    <label class="form__label form__label--checkbox" for="confirm9">
+                        Род занятий
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm10" value="10" id="confirm10" />
+                    <label class="form__label form__label--checkbox" for="confirm10">
+                        Должность
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm11" value="11" id="confirm11" />
+                    <label class="form__label form__label--checkbox" for="confirm11">
+                        Среднемесячный доход
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm12" value="12" id="confirm12" />
+                    <label class="form__label form__label--checkbox" for="confirm12">
+                        Среднемесячный расход по отношению к доходу
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm13" value="13" id="confirm13" />
+                    <label class="form__label form__label--checkbox" for="confirm13">
+                        Кредитовались ли вы раньше
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm14" value="14" id="confirm14" />
+                    <label class="form__label form__label--checkbox" for="confirm14">
+                        Есть ли непогашенные кредиты
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm15" value="15" id="confirm15" />
+                    <label class="form__label form__label--checkbox" for="confirm15">
+                        Имеются ли решения суда, которые вы не исполнили
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm16" value="16" id="confirm16" />
+                    <label class="form__label form__label--checkbox" for="confirm16">
+                        Находитесь ли вы под судом или следствием
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm17" value="17" id="confirm17" />
+                    <label class="form__label form__label--checkbox" for="confirm17">
+                        Свидетельство о регистрации автомобиля
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm18" value="18" id="confirm18" />
+                    <label class="form__label form__label--checkbox" for="confirm18">
+                        Водительское удостоверение
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm19" value="19" id="confirm19" />
+                    <label class="form__label form__label--checkbox" for="confirm19">
+                        Свидетельство о регистрации собственности
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm20" value="20" id="confirm20" />
+                    <label class="form__label form__label--checkbox" for="confirm20">
+                        Справка НДФЛ
+                    </label>
+                </div>
+
+            </div>
+            <div class="col-md-6 checkboxes__entity">
+                <div class="checkboxes__headers">
+                    Для юридических лиц
+                </div>
+                <input class="form__input form__input--checkbox" type="checkbox" name="confirm21" value="21" id="confirm21" />
+                    <label class="form__label form__label--checkbox" for="confirm21">
+                        Численность сотрудников
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm22" value="22" id="confirm22" />
+                    <label class="form__label form__label--checkbox" for="confirm22">
+                        Разрешения и лецензии
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm23" value="23" id="confirm23" />
+                    <label class="form__label form__label--checkbox" for="confirm23">
+                        Открытые расчетные счета
+                    </label>  
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm24" value="24" id="confirm24" />
+                    <label class="form__label form__label--checkbox" for="confirm24">
+                        Кредитная история за последние 3 года <span>(кредиты собственников на ведение бизнеса и потребительские цели)</span>
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm25" value="25" id="confirm25" />
+                    <label class="form__label form__label--checkbox" for="confirm25">
+                        Местонахождение бизнеса
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm26" value="26" id="confirm26" />
+                    <label class="form__label form__label--checkbox" for="confirm26">
+                        Транспорт <span>(включая личный транспорт собственников бизнеса)</span>
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm6" value="27" id="confirm27" />
+                    <label class="form__label form__label--checkbox" for="confirm27">
+                        Кем является заявитель <span>(Эмитентом эмиссионных ценных бумаг, управляющей компаний и т.п.)</span>
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm28" value="28" id="confirm28" />
+                    <label class="form__label form__label--checkbox" for="confirm28">
+                        Страхование имущества заявителя <span>(вид, сумма, выгодоприобретатель, наименование страховой компании, срок страхования)</span>
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm29" value="29" id="confirm29" />
+                    <label class="form__label form__label--checkbox" for="confirm29">
+                        Балансовые показатели
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm30" value="30" id="confirm30" />
+                    <label class="form__label form__label--checkbox" for="confirm30">
+                        Сведения об учредителях/рукаводителях/участниках
+                    </label>
+                    <input class="form__input form__input--checkbox" type="checkbox" name="confirm31" value="31" id="confirm31" />
+                    <label class="form__label form__label--checkbox" for="confirm31">
+                        Информация о связанных компаниях <span>(участие, ведение совместной деятельности)</span>
+                    </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <button class="btn btn--primary btn--createOrder btn--inline">Создать заявку</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <nav>
+            <ul class="accountMenu">
+                <li class="accountMenu__item accountMenu__item--searchDeal accountMenu__item--active">
+                    <a href="#">Выдача займов</a>
+                </li>
+                <li class="accountMenu__item accountMenu__item--searchDeal ">
+                    <a href="#">Получение займов</a>
+                </li>
+                <li class="accountMenu__item accountMenu__item--pages">
+                    <a href="" class="accountMenu__page">10</a>
+                    <a href="" class="accountMenu__page">20</a>
+                    <a href="" class="accountMenu__page">30</a>
+                    <a href="" class="accountMenu__page">Все</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="accountContent">
+            <table class="offers">
+                        <thead class="offersHead">
+                            <tr class="offersRow">
+                                <th class="offersHead__block offersHead__block_icon offersHead__block_icon_card">Контрагент</th>
+                                <th class="offersHead__block">Сумма в кредит/<br/>к погашению</th>
+                                <th class="offersHead__block">% за период</th>
+                                <th class="offersHead__block">Срок</th>
+                                <th class="offersHead__block">Надежность/<br/>Прозрачность</th>
+                                <th class="offersHead__block">Город</th>
+                            </tr>
+                        </thead>
+                        <tbody class="offersBody">
+                            <tr class="offersRow offersBody__oneColor">
+                                <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#modal-login">NaVi.Dendi</a></td>
+                                <td class="offersBody__block">1000 / 1200 <small>руб.</small></td>
+                                <td class="offersBody__block">20</td>
+                                <td class="offersBody__block">7 <small>дней</small></td>
+                                <td class="offersBody__block">25/15</td>
+                                <td class="offersBody__block offersBody__block--small">Хабаровск</td>
+                                <td class="offersBody__block offersBody__block--small">
+                                    <a class="offers__dealLink" href="#modal-deal">Совершить сделку</a>
+                                </td>
+                            </tr>
+                            <tr class="offersRow offersBody__oneColor">
+                                <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">Empire.XBOCT</a></td>
+                                <td class="offersBody__block">1000 / 1200 <small>руб.</small></td>
+                                <td class="offersBody__block">20</td>
+                                <td class="offersBody__block">7 <small>дней</small></td>
+                                <td class="offersBody__block">25/15</td>
+                                <td class="offersBody__block offersBody__block--small">Хабаровск</td>
+                                <td class="offersBody__block offersBody__block--small">
+                                    <a class="offers__dealLink" href="#modal-deal">Совершить сделку</a>
+                                </td>
+                            </tr>
+                            <tr class="offersRow offersBody__oneColor">
+                                <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">EG.SumaiL</a></td>
+                                <td class="offersBody__block">1000 / 1200 <small>руб.</small></td>
+                                <td class="offersBody__block">20</td>
+                                <td class="offersBody__block">7 <small>дней</small></td>
+                                <td class="offersBody__block">25/15</td>
+                                <td class="offersBody__block offersBody__block--small">Хабаровск</td>
+                                <td class="offersBody__block offersBody__block--small">
+                                    <a class="offers__dealLink" href="#modal-deal">Совершить сделку</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tab-2" class="tabBody hidden">
+                    <table class="offers">
+                        <thead class="offersHead">
+                        <tr class="offersRow">
+                            <th class="offersHead__block offersHead__block_icon offersHead__block_icon_card">Кредитор</th>
+                            <th class="offersHead__block">Сумма в кредит/<br/>к погашению</th>
+                            <th class="offersHead__block">% за период</th>
+                            <th class="offersHead__block">Срок</th>
+                            <th class="offersHead__block">Надежность/<br/>Прозрачность</th>
+                            <th class="offersHead__block">Город</th>
+                            <th class="offersHead__block offersHead__block_empty"></th>
+                        </tr>
+                        </thead>
+                        <tbody class="offersBody">
+                        <tr class="offersRow offersBody__row">
+                            <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">invoker</a></td>
+                            <td class="offersBody__block">2000 / 3200 <small>руб.</small></td>
+                            <td class="offersBody__block">10</td>
+                            <td class="offersBody__block">5 <small>дней</small></td>
+                            <td class="offersBody__block">15/18</td>
+                            <td class="offersBody__block offersBody__block--small">Хабаровск</td>
+                            <td class="offersBody__block offersBody__block--small">
+                                <a class="offers__dealLink" href="">Совершить сделку</a>
+                            </td>
+                        </tr>
+                        <tr class="offersRow offersBody__row">
+                            <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">rutracker</a></td>
+                            <td class="offersBody__block">1500 / 1800 <small>руб.</small></td>
+                            <td class="offersBody__block">25</td>
+                            <td class="offersBody__block">4 <small>дней</small></td>
+                            <td class="offersBody__block">21/13</td>
+                            <td class="offersBody__block offersBody__block--small">Хабаровск</td>
+                            <td class="offersBody__block offersBody__block--small">
+                                <a class="offers__dealLink" href="">Совершить сделку</a>
+                            </td>
+                        </tr>
+                        <tr class="offersRow offersBody__row">
+                            <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">paulwalker</a></td>
+                            <td class="offersBody__block">80000 / 82500 <small>руб.</small></td>
+                            <td class="offersBody__block">5</td>
+                            <td class="offersBody__block">70 <small>дней</small></td>
+                            <td class="offersBody__block">35/98</td>
+                            <td class="offersBody__block offersBody__block--small">Хабаровск</td>
+                            <td class="offersBody__block offersBody__block--small">
+                                <a class="offers__dealLink" href="">Совершить сделку</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+        </div><!--Wrapper -->
+    </div>
+</div>
+        
+
+
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 footer__credentials">
+                <div class="footer__credentials__item">OOO “Фин-Хаб” © 2015</div>
+                <br/>
+
+                <div class="footer__credentials__item">ИНН 2721216070</div>
+                <div class="footer__credentials__item">ОГРН 1152721002301</div>
+            </div>
+            <div class="col-md-2">
+                <nav class="footerNav">
+                    <div class="footerNav__link footerNav__link_top"><a href="">Мне нужны деньги</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Найти кредитора</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Выставить заявку</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Важно знать</a></div>
+                </nav>
+            </div>
+            <div class="col-md-3 footerNavPaddingContainer">
+                <nav class="footerNav">
+                    <div class="footerNav__link footerNav__link_top"><a href="">Готов вложить деньги</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Найти заемщика</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Выставить заявку</a></div>
+                    <div class="footerNav__link footerNav__link_inner"><a href="">Важно знать</a></div>
+                </nav>
+            </div>
+            <div class="col-md-2 footer__col">
+                <a class="footer__link" href="">Оставить отзыв</a> <br/>
+                <a class="footer__link" href="">Помощь</a> <br/>
+
+                <a class="web-alternative" href="http://web-alt.ru" target="_blank">
+                    Сайт разработан WEB ALTERNATIVE
+                </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+<!--Modals and Usercards -->
+
+
+<div id="userCard-template" class="hidden" aria-hidden="true">
+        <div class="userCard">
+            <div class="template__body">
+                <%this.img%>
+                <div class="userCard__row userCard__row--p"><a target="_blank" class="userCard__fio" href=""><%this.fio%></a></div>
+                <div class="userCard__row userCard__row--type userCard__row--p"><%this.type%></div>
+                <div class="userCard__row userCard__row_age userCard__row--p"><%this.age%> <span class="userCard__city"><%this.city%></span></div>
+                <div class="userCard__row userCard__row--register">Зарегистрирован: <span class="userCard__value"><%this.register%></span></div>
+                <div class="userCard__row userCard__row_deals">Сделок: <span class="userCard__value"><%this.deals%></span></div>
+                <div class="userCard__row userCard__row_rating">Рейтинг: <span class="userCard__value"><%this.rating%></span></div>
+                <div class="userCard__row userCard__row_opacity">Прозрачность: <span class="userCard__value"><%this.opacity%></span></div>
+                <div class="userCard__row userCard__row_reviews">Отзывы: <span class="userCard__value"><%this.reviews%></span></div>
+                <div class="userCard__row userCard__row_votes">
+                    Количество оценок:
+                    <a class="userCard__vote userCard__vote--up" href="">40</a>
+                    <a class="userCard__vote userCard__vote--down" href="">16</a>
+                </div>
+                <div class="userCard__row userCard__row--btn">
+                    <a class="btn btn--inline btn--primary userCard__btn" href="">Написать сообщение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--Modal -->
+
+<div class="modal" id="modal-deal" aria-hidden="true">
+        <a href="#close" class="modalBlack"></a>
+        <div class="modalDialog orderDialog">
+            <div class="modal-body">
+                <div class="orderDialog__orderNumber orderDialog__orderNumber--loan">Заявка на сделку #12345 от 15.10.2015 на выдачу займа</div>
+                <div class="orderDialog__content row aboutOrder">
+                    <div class="col-md-6 aboutOrder__ticket">
+                        <div class="avatarPhoto avatarPhoto--modalOrders"><img src="http://lorempixel.com/200/200/cats/"></div>
+                        <div class="aboutOrder__userBlock">
+                            <a href="#">Александр Сергеевич П.</a><br>
+                            <span>физическое лицо</span><br>
+                            <span class="ages">45 лет</span><span>Хабаровск</span>
+                        </div>
+                        <div class="myMenu__info">
+                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Зарегистрирован:
+                            <span class="myMenu__info myMenu__info--value myMenu__info--modalOrderValue">2 года назад</span>
+                        </div>
+                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Рейтинг:
+                            <span class="myMenu__info myMenu__info--value myMenu__info--modalOrderValue">415 баллов</span>
+                        </div>
+                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Прозрачность: 
+                            <span class="myMenu__info myMenu__info--value myMenu__info--modalOrderValue">75%</span>
+                        </div>
+                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Отзывы: 
+                            <span class="myMenu__info myMenu__info--value myMenu__info--modalOrderValue">45</span>
+                        </div>
+                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Оценки:
+                            <span class="myMenu__info myMenu__info--good"> 
+                                <img src="assets/img/good.png"> 40</span>
+                            <span class="myMenu__info myMenu__info--bad">
+                                <img  src="assets/img/bad.png"> 5</span>
+                        </div>
+                        </div>
+                        <div class="myMenu__buttons">
+                            <button class="btn btn_primary btn__myMenu btn__myMenu--modalOrder">
+                                <img src="assets/img/icon_message.png">Написать сообщение
+                            </button>
+                        </div>
+                        <div class="aboutOrder__comments aboutOrder__comments--loan">
+                            <span>Комментарий:</span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                        </div>
+                        <div class="aboutOrder__buttons">
+                            <div class="aboutOrder__buttonWrapper">
+                                <button class="btn btn--primary btn--full btn--confirm">
+                                    Заключить сделку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="aboutLoan">
+                            <div class="aboutLoan__infoblock">
+                            <span class="aboutLoan__item aboutLoan__item--name">Сумма займа:</span><span class="aboutLoan__item--value">1000 рублей</span>
+                            </div>
+                            <div class="aboutLoan__infoblock">
+                            <span class="aboutLoan__item aboutLoan__item--name">Сумма возврата:</span><span class="aboutLoan__item--value">1200 рублей</span>
+                            </div>
+                            <div class="aboutLoan__infoblock">
+                            <span class="aboutLoan__item aboutLoan__item--name">Процент за период:</span><span class="aboutLoan__item--value">20%</span>
+                            </div>
+                            <div class="aboutLoan__infoblock">
+                            <span class="aboutLoan__item aboutLoan__item--name">Срок кредита:</span><span class="aboutLoan__item--value">7 дней</span>
+                            </div>
+                            <div class="aboutLoan__infoblock">
+                            <span class="aboutLoan__item aboutLoan__item--name">Регион:</span><span class="aboutLoan__item--value">Хабаровский край</span>
+                            </div>
+                            <div class="aboutLoan__infoblock">
+                            <span class="aboutLoan__item aboutLoan__item--name">Город:</span><span class="aboutLoan__item--value">Хабаровск</span>
+                            </div>
+                        </div>
+                        <div class="aboutLoan__notes aboutLoan__notes--loan">
+                            Дополнительные требования по займу
+                            <ul>
+                                <li><span>Семейное положение</span></li>
+                                <li><span>Образование</span></li>
+                                <li><span>Проживание</span></li>
+                                <li><span>Род занятий</span></li>
+                                <li><span>Должность</span></li>
+                                <li><span>Кредитовались ли вы раньше</span></li>
+                                <li><span>Среднемесячный доход</span></li>
+                                <li><span>Есть ли непогашенные кредиты</span></li>
+                            </ul>
+                            Файлы:
+                            <ul>
+                                <li><a href="">Копия основного документа</a></li>
+                                <li><a href="">Копия водительских прав</a></li>
+                            </ul>
+                        </div>
+                    </div><!--col-md-6 -->
+                </div><!--row -->
+
+                <div class="orderDialog__close">
+                    <a href=""><img src="assets/img/close2.png"></a>
+                </div>
+            </div><!--modalbody -->
+        </div>
+    </div>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/vendor/selectric/jquery.selectric.min.js"></script>
+    <script src="assets/vendor/slick-1.5.9/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

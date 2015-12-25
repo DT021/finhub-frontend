@@ -110,6 +110,10 @@ a {
 	clear: both;
 }
 
+.text-right {
+	text-align: right;
+}
+
 .logo {
 	display: block;
 	max-width: 254px;
@@ -840,6 +844,12 @@ a {
 		margin-top: 10px;
 	}
 
+	&--writeMe {
+		padding: 15px 85px;
+		font-size: 18px;
+		font-weight: @light;
+	}
+
 	&--photo {
 		padding-top: 10px !important;
 		padding-bottom: 10px !important;
@@ -863,6 +873,13 @@ a {
 		&:before {
 			margin-right: 5px;
 		}
+	}
+	
+	&--createOrder {
+		padding: 15px 67px;
+		margin-top: 35px;
+		font-weight: @light; 
+		margin-bottom:35px;
 	}
 
 	&--primary {
@@ -2423,6 +2440,21 @@ a {
 	list-style: none;
 	width:100%;
 	padding:0;
+	
+	&__page {
+			color:@brand-primary  !important;
+			border:none !important;
+			background: none !important;
+			width: 20px !important;
+			height: 30px !important;
+			display: inline-block !important;
+			padding: 15px 0  !important;
+			margin-right: 10px ;
+			text-decoration: underline !important;
+			font-size: 18px !important;
+			font-weight: @light !important;
+			
+	}
 
 	&__item {
 		display: block;
@@ -2444,6 +2476,10 @@ a {
 			}
 		}
 		
+		&--pages {
+			text-align: right;
+			width:578px;
+		}
 
 		& a {
 			display: block;
@@ -2482,6 +2518,7 @@ a {
 		border-bottom:none;
 		padding-bottom: 21px;
 	}
+	
 }
 
 
@@ -3087,7 +3124,7 @@ BlackList
 .selectric-responsive {
   width: 100%;
 }
-
+/* Стиль основного SELECTA  */
 .selectric {
   border: 1px solid white;
   background: inherit;
@@ -3095,6 +3132,8 @@ BlackList
   border-radius: 0;
 
 }
+
+/* Стиль надписи SELECTA  */
 .selectric .label {
   display: block;
   white-space: nowrap;
@@ -3109,6 +3148,8 @@ BlackList
   font-weight: @light;
   font-size:18px;
 }
+
+/* Стиль кнопки SELECTA  */
 .selectric .button {
   display: block;
   position: absolute;
@@ -3122,6 +3163,7 @@ BlackList
   /* IE Fix */
   *font: 20px/30px Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
+/* Стиль кнопки SELECTA  */
 .selectric .button:after {
   content: " ";
   position: absolute;
@@ -3247,6 +3289,8 @@ background: inherit;
   min-height: 20px;
 
 }
+
+/* Стиль элементов SELECTA  */
 .selectric-items li {
   display: block;
   padding: 10px 20px;
@@ -3387,6 +3431,16 @@ input[type="radio"] {
 .testclass {
 	border: none;
 }
+
+
+
+
+/*
+
+	Основные стили страницы поиска заявки
+
+
+*/
 
 .searchDealFilters {
 	color:white;
@@ -3531,5 +3585,161 @@ input[type="radio"] {
   			font-weight: @light;
   			font-size:14px;
 		}
+	}
+}
+
+
+/*
+
+ 	Страница создания заявки
+
+
+*/
+
+.createApp {
+	position: relative;
+
+	textarea {
+		position: absolute;
+		top:120px;
+		left:465px;
+		width:58%;
+		height: 160px;
+		font-size: 18px;
+		font-weight: @light;
+		border: 1px solid @brand-blue;
+		background: transparent;
+		color: #616161;
+		padding: 10px;
+	}
+
+	&__inputName {
+		vertical-align: top;
+		display: inline-block;
+		font-size: 18px;
+		font-weight: @light;
+		width:22.2%;
+	}
+
+	&__inputValue {
+		vertical-align: top;
+		display: inline-block;
+		font-size: 18px;
+		font-weight: @light;
+		width:16.8%;
+
+		input {
+			text-align: right;
+			height: 38px;
+			width: 100px;
+			border: 1px solid @brand-blue;
+			padding: 10px;
+			background: transparent;
+			margin-right: 15px;
+		}
+	}
+	
+	&__inputWrap {
+
+		display: block;
+		margin-bottom:20px;
+	}
+
+	&__select {
+		display: inline-block;
+		width: 290px;
+		vertical-align: top;
+
+		.selectric {
+  			border: 1px solid @brand-blue;
+		}
+
+		.selectric .label {
+  			display: block;
+  			white-space: nowrap;
+  			overflow: hidden;
+  			text-overflow: ellipsis;
+  			margin: 0 30px 0 0;
+  			color: #616161;
+  			min-height: 18px;
+  			font-family: 'Exo 2', sans-serif;
+  			font-weight: @light;
+  			font-size:18px;
+  			border-radius: 4px;
+		}
+	}
+}
+
+
+
+.checkboxes {
+	&__mainHeader {
+		font-size: 27px;
+		font-weight: @light;
+		margin: 40px 0;
+	}
+
+	&__headers {
+		font-size: 20px;
+		font-weight: @medium;
+	}
+
+	&__individual {
+		font-weight: @light;
+		padding-left: 25px;
+
+		label {
+			margin-top: 15px;
+		}
+	}
+
+	&__entity {
+		font-weight: @light;
+
+		label {
+			margin-top: 15px;
+		}
+
+		span {
+			font-size: 14px;
+		}
+	}
+}
+
+
+
+.writeMe {
+	&__label {
+		font-weight: @light;
+	}
+	
+	&__captcha {
+		margin-bottom: 30px;
+	}
+
+	&__message {
+		margin-top:30px;
+	}
+
+	&__textarea {
+		height: 265px;
+		width: 100%;
+		background: inherit;
+		border: 1px solid @brand-blue;
+		padding: 15px;
+		font-weight: @light;
+		font-size: 18px;
+	}
+}
+
+.faq {
+	&__header {
+		font-size: 18px;
+		font-weight: @light;
+	}
+
+	&__content {
+		font-size: 18px;
+		font-weight: @light;
 	}
 }
