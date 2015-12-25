@@ -2827,7 +2827,7 @@ input[type="radio"]:checked + label:after {
   -o-transition: all 0.1s ease 0s;
 }
 .testclass {
-  border: none;
+  border: 5px dotted red;
 }
 /*
 
