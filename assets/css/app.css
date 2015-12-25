@@ -2550,7 +2550,7 @@ BlackList
   text-align: center;
   font: 0/0 a;
   /* IE Fix */
-  *font: 0.66666667px Lucida Sans Unicode, Arial Unicode MS, Arial;
+  *font: 0.6666666666666666px Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
 .selectric .button:after {
   content: " ";
