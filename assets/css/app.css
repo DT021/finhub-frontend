@@ -596,6 +596,9 @@ a:hover {
 .btn--full {
   width: 100%;
 }
+.btn--center {
+  text-align: center;
+}
 .btn--straight {
   border-radius: 0;
 }
@@ -702,6 +705,13 @@ a:hover {
   margin-top: 35px;
   font-weight: 300;
   margin-bottom: 35px;
+}
+.btn--save {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.btn--enterContract {
+  margin-left: 30px;
 }
 .btn--primary {
   background-color: #3f6095;
@@ -2381,9 +2391,7 @@ MyPage
   margin-top: 10px;
 }
 .myMenu__info--good {
-  color: #01b5b1;
-  margin-right: 5px;
-  margin-left: 5px;
+  padding-top: 0;
 }
 .myMenu__info--bad {
   color: #f44336;
@@ -2913,6 +2921,7 @@ input[type="radio"]:checked + label:after {
 }
 .searchDealFilters__location {
   padding-left: 4.4% !important;
+  padding-right: 5px !important;
 }
 .searchDealFilters__location .selectric {
   border: 1px solid #5893b9;
@@ -3087,4 +3096,153 @@ input[type="radio"]:checked + label:after {
 .faq__content {
   font-size: 18px;
   font-weight: 300;
+}
+.pagination {
+  list-style: none;
+}
+.pagination li {
+  float: left;
+  margin-right: 10px;
+}
+.pagination li a {
+  padding: 5px 10px;
+  background: #3f6095;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.pagination li a:hover {
+  background: #01b5b1;
+}
+.pagination li a[aria-label=Next],
+.pagination li a[aria-label=Previous] {
+  padding: 5px 15px;
+}
+.pagination .active a {
+  background: #01b5b1 !important;
+}
+.pagination li:last-child {
+  margin-right: 0;
+}
+.contractHeader a {
+  color: #3f6095;
+  text-decoration: none;
+  border-bottom: 3px solid #3f6095;
+}
+.contract__document {
+  overflow: scroll;
+  background: yellow;
+  height: 800px;
+  margin-bottom: 20px;
+}
+.contract__info {
+  font-size: 18px;
+  font-weight: 300;
+}
+.contract__chartHeader {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.contract__chartPays {
+  margin-top: 30px;
+}
+.contract__buttons {
+  margin-top: -40px;
+}
+.chartTable {
+  margin-top: 10px;
+}
+.chartTable td,
+.chartTable th {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.chartTable td {
+  background: transparent;
+  border: 1px solid #5893b9;
+}
+.chartTable th {
+  background: #aeaeae;
+  color: white;
+  border-right: 1px solid #5893b9;
+}
+.chartTable th:last-child {
+  border: none;
+}
+.chartTable tr:last-child {
+  background: #757575;
+  color: white;
+}
+.chartTable .prevDate {
+  background: #ffa39c;
+}
+.chartTable .checkedRow {
+  background: #e0e0e0;
+}
+.chartTable .theadFixed {
+  position: fixed;
+  top: 0;
+}
+.chartTable .theadFixed th:first-child {
+  padding: 15px 64px;
+}
+.chartTable .theadFixed th:nth-child(2) {
+  padding: 15px 47px;
+}
+.chartTable .lastChildFixed {
+  position: fixed;
+  bottom: 0%;
+}
+.chartTable .lastChildRelative {
+  background: #757575;
+  color: white;
+}
+.warningDialog {
+  margin-left: -15%;
+  width: 600px;
+  text-align: center;
+  background: white;
+  color: black;
+  padding: 55px 80px;
+}
+.warningDialog__message {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.typeContractDialog {
+  margin-left: -15%;
+  background: white;
+  width: 587px;
+  color: black;
+  padding: 60px;
+}
+.typeContractDialog span {
+  font-size: 18px;
+  font-weight: 300;
+}
+.typeContractDialog .selectric {
+  border: 1px solid #5893b9;
+  background: inherit;
+  position: relative;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.typeContractDialog .selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 30px 0 0;
+  padding: 10px 12px;
+  line-height: 18px;
+  color: black;
+  min-height: 18px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }

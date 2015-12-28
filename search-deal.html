@@ -147,10 +147,10 @@
             			</div>
             		</div>
             		<div class="col-md-3 searchDealFilters__extendSearch">
-            			<a href="">Расширенный поиск</a>
+            			<a href="javascript:void(0)">Расширенный поиск</a>
             		</div>
             	</div>
-            	<div class="row">
+            	<div class="row hidden">
             		<div class="col-md-3 searchDealFilters__facialAppearance">
                 		<input class="form__input form__input--checkbox" type="checkbox" name="confirm1" value="1" id="confirm1" />
                 		<label class="form__label form__label--checkbox form__label--checkboxWhite" for="confirm1">
@@ -388,17 +388,13 @@
                         <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Отзывы: 
                             <span class="myMenu__info myMenu__info--value myMenu__info--modalOrderValue">45</span>
                         </div>
-                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName">Оценки:
-                            <span class="myMenu__info myMenu__info--good"> 
-                                <img src="assets/img/good.png"> 40</span>
-                            <span class="myMenu__info myMenu__info--bad">
-                                <img  src="assets/img/bad.png"> 5</span>
+                        <div class="myMenu__info myMenu__info--name myMenu__info--modalOrderName userCard__row_votes">Оценки:
+                            <a class="userCard__vote userCard__vote--up myMenu__info--good" href="">40</a>
+                            <a class="userCard__vote userCard__vote--down" href="">16</a>
                         </div>
                         </div>
                         <div class="myMenu__buttons">
-                            <button class="btn btn_primary btn__myMenu btn__myMenu--modalOrder">
-                                <img src="assets/img/icon_message.png">Написать сообщение
-                            </button>
+                            <a class="btn btn--inline btn--primary userCard__btn userCard__btn--modal" href="">Написать сообщение</a>
                         </div>
                         <div class="aboutOrder__comments aboutOrder__comments--loan">
                             <span>Комментарий:</span>

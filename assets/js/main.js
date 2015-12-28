@@ -261,3 +261,43 @@ $(function(){
 $(function(){
     $('select').selectric();
 });
+
+//Slide Search-deal
+$(function(){
+    $('.searchDealFilters__extendSearch a').click(function(){
+        $(this).parents('.searchDealFilters').find('.hidden').slideToggle();
+    });
+});
+
+$(function(){
+    $('.chartTable tbody tr').click(function(){
+        $('.chartTable tbody tr').removeClass('checkedRow');
+        $(this).addClass('checkedRow');
+    });
+
+    $(window).on("scroll", function() {
+        $(".chartTable tbody tr:last-child").addClass('lastChildFixed');
+       var top= $(".chartTable").offset().top;
+        if ($(window).scrollTop() > top) { 
+            $(".chartTable thead").addClass('theadFixed');
+        }
+        else {
+            $(".chartTable thead").removeClass('theadFixed');
+        };
+
+        var bot = $(".chartTable").outerHeight();
+        if ($(window).scrollTop() >= bot) { 
+            $(".chartTable tbody tr").removeClass('lastChildFixed');
+        }
+/*      
+        if ($(window).scrollTop() > bot) { 
+            $(".chartTable tr:last-child").removeClass('lastChildFixed');
+        }
+        else {
+            $(".chartTable tr:last-child").addClass('lastChildFixed');
+        };
+    */
+        
+    });
+
+});

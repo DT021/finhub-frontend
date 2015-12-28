@@ -165,6 +165,7 @@ a {
 			margin-top: 13px;
 			margin-right: 25px;
 		}
+
 	}
 
 	h2 {
@@ -757,6 +758,10 @@ a {
 	&--full {
 		width: 100%;
 	}
+	
+	&--center {
+		text-align: center;
+	}
 
 	&--straight {
 		border-radius: 0;
@@ -882,6 +887,14 @@ a {
 		margin-bottom:35px;
 	}
 
+	&--save {
+		padding-left: 25px;
+		padding-right: 25px;
+	}	
+	
+	&--enterContract {
+		margin-left: 30px;
+	}
 	&--primary {
 		background-color: @brand-primary;
 		color: white;
@@ -2911,12 +2924,9 @@ MyPage
 
 	&__info {
 		margin-top: 10px;
-
+		
 		&--good {
-			color:@brand-secondary;
-			margin-right: 5px;
-			margin-left: 5px;
-			
+			padding-top: 0;
 		}
 
 		&--bad {
@@ -3539,6 +3549,7 @@ input[type="radio"] {
 
 	&__location {
 		padding-left: 4.4% !important;
+		padding-right: 5px !important;
 
 		.selectric {
   			border: 1px solid @brand-blue;
@@ -3752,5 +3763,195 @@ input[type="radio"] {
 	&__content {
 		font-size: 18px;
 		font-weight: @light;
+	}
+}
+.pagination {
+	list-style: none;
+
+	li {
+		float:left;
+		margin-right: 10px;
+
+		a {
+			padding: 5px 10px;
+			background: @brand-primary;
+			text-decoration: none;
+			color:white;
+			font-weight: @light;
+			font-size: 16px;
+			border-radius: 5px;
+
+			&:hover {
+				background: @brand-secondary;
+			}
+		}
+		
+		a[aria-label=Next], a[aria-label=Previous] {
+			padding: 5px 15px;
+		}
+
+		
+	}
+
+	.active {
+		a {
+			background: @brand-secondary !important;
+		}
+	}
+
+	li:last-child {
+		margin-right: 0;
+	}
+}
+
+.contractHeader {
+	a {
+		color:@brand-primary;
+		text-decoration: none;
+		border-bottom: 3px solid @brand-primary;
+	}
+}
+
+.contract {
+	&__document {
+		overflow: scroll;
+		background: yellow;
+		height:800px;
+		margin-bottom: 20px;
+	}
+
+	&__info {
+		font-size: 18px;
+		font-weight: @light;
+	}
+
+	&__chartHeader {
+		font-size: 18px;
+		font-weight: @light;
+		margin-bottom: 25px;
+	}
+
+	&__chartPays {
+		margin-top: 30px;
+	}
+
+	&__buttons {
+		margin-top: -40px;
+	}
+}
+
+.chartTable {
+	margin-top: 10px;
+	td,th {
+		padding: 15px 40px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	td {
+		background: transparent;
+		border:1px solid @brand-blue;
+	}
+
+	th {
+		background: #aeaeae;
+		color:white;
+		border-right: 1px solid @brand-blue;
+	}
+
+	th:first-child {
+	}
+
+	th:last-child {
+		border:none;
+	}
+
+	tr:last-child{
+		background: #757575;
+		color:white;
+	}
+
+	.prevDate {
+		background: #ffa39c;
+	}
+
+	.checkedRow{
+		background: #e0e0e0;
+	}
+
+	.theadFixed {
+		position: fixed;
+		top:0;
+		
+		th:first-child {
+			padding: 15px 64px;
+		}
+		th:nth-child(2){
+			padding: 15px 47px;
+		}
+
+	}
+
+	.lastChildFixed {
+		position: fixed;
+		bottom: 0%;
+	}
+	.lastChildRelative {
+		background: #757575;
+		color:white;
+	}
+	
+
+}
+
+
+.warningDialog {
+	margin-left: -15%;
+	width: 600px;
+	text-align: center;
+	background: white;
+	color:black;
+	padding: 55px 80px;
+	&__message {
+		margin-bottom: 20px;
+		font-weight: 300;
+		font-size: 18px;
+	}
+}
+
+.typeContractDialog {
+	margin-left: -15%;
+	background: white;
+	width: 587px;
+	color:black;
+	
+	padding: 60px;
+
+	span {
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	.selectric {
+  		border: 1px solid @brand-blue;
+  		background: inherit;
+  		position: relative;
+  		border-radius: 0;
+  		margin-bottom: 20px;
+	}
+
+	.selectric .label {
+  		display: block;
+  		white-space: nowrap;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+  		margin: 0 30px 0 0;
+  		padding: 10px 12px;
+  		line-height: 18px;
+  		color: black;
+  		min-height: 18px;
+  		font-family: 'Exo 2', sans-serif;
+  		font-weight: @light;
+  		font-size:18px;
 	}
 }

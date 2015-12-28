@@ -101,161 +101,132 @@
     </nav>
 </div>
 
-<div class="container content">
+<div class="container content contractHeader">
 
-    <h1>Личный кабинет</h1>
+    <h1>Договор #01109092015 по сделке <a href="">#123456</a></h1>
 </div>
-    <div class="container">
-        <nav>
-            <ul class="accountMenu">
-                <li class="accountMenu__item">
-                    <a href="personal-mypage.html">Мои данные</a>
-                </li>
-                <li class="accountMenu__item accountMenu__item--messages">
-                    <a href="personal-messages.html">Личные сообщения</a>
-                </li>
-                <li class="accountMenu__item accountMenu__item--active">
-                    <a href="personal-orders.html">Мои заявки</a>
-                </li>
-                <li class="accountMenu__item">
-                    <a href="personal-deal.html">Мои сделки</a>
-                </li>
-                <li class="accountMenu__item">
-                    <a href="personal-contract.html">Мои договоры</a>
-                </li>
-                <li class="accountMenu__item accountMenu__item--lastItem">
-                    <a href="personal-blacklist.html">Черный список</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="container">
-        <div class="accountContent">
-            <div class="requests">
-                <div class="requests__filter">
-                
-                    <input class="radioButton" type="radio" name="type" value="1" id="smalltype1" />
-                    <label class="LabelRadio LabelRadio--filter" for="smalltype1">Получение займа</label><br>
-                        <input type="radio" name="type" value="2" id="smalltype2" />
-                        <label class="LabelRadio LabelRadio--filter" for="smalltype2">Выдача займа</label>
-                
-                </div>
-                <div class="requests__filter">
-                    <input type="radio" name="type" value="3" id="smalltype3" />
-                        <label class="LabelRadio LabelRadio--filter" for="smalltype3">Заявки от меня</label>
-                        <input type="radio" name="type" value="4" id="smalltype4" />
-                        <label class="LabelRadio LabelRadio--filter" for="smalltype4">Заявки мне</label>
-                </div>
-                <div class="requests_filter requests__select">
-                    <select>
-                        <option>Новые</option>
-                        <option>Ожидают подтверждения</option>
-                        <option>На согласовании</option>
-                        <option>Ждёт оплаты</option>
-                    </select>
-                </div>
+<div class="container contract">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="contract__document">
             </div>
-            <table class="offers">
-                        <thead class="offersHead">
-                            <tr class="offersRow">
-                                <th class="offersHead__block offersHead__block_icon offersHead__block_icon_card">Контрагент</th>
-                                <th class="offersHead__block">Сумма в кредит/<br/>к погашению</th>
-                                <th class="offersHead__block">% за период</th>
-                                <th class="offersHead__block">Срок</th>
-                                <th class="offersHead__block">Надежность/<br/>Прозрачность</th>
-                                <th class="offersHead__block">Город</th>
-                                <th class="offersHead__block">Состояние</th>
-                            </tr>
-                        </thead>
-                        <tbody class="offersBody">
-                            <tr class="offersRow offersBody__oneColor">
-                                <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#modal-login">NaVi.Dendi</a></td>
-                                <td class="offersBody__block">1000 / 1200 <small>руб.</small></td>
-                                <td class="offersBody__block">20</td>
-                                <td class="offersBody__block">7 <small>дней</small></td>
-                                <td class="offersBody__block">25/15</td>
-                                <td class="offersBody__block offersBody__block--small">Хабаровск</td>
-                                <td class="offersBody__block offersBody__block--small">
-                                    <a class="offers__dealLink" href="#modal-deal">Совершить сделку</a>
-                                </td>
-                            </tr>
-                            <tr class="offersRow offersBody__oneColor">
-                                <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">Empire.XBOCT</a></td>
-                                <td class="offersBody__block">1000 / 1200 <small>руб.</small></td>
-                                <td class="offersBody__block">20</td>
-                                <td class="offersBody__block">7 <small>дней</small></td>
-                                <td class="offersBody__block">25/15</td>
-                                <td class="offersBody__block offersBody__block--small">Хабаровск</td>
-                                <td class="offersBody__block offersBody__block--small">
-                                    <a class="offers__dealLink" href="#modal-deal">Совершить сделку</a>
-                                </td>
-                            </tr>
-                            <tr class="offersRow offersBody__oneColor">
-                                <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">EG.SumaiL</a></td>
-                                <td class="offersBody__block">1000 / 1200 <small>руб.</small></td>
-                                <td class="offersBody__block">20</td>
-                                <td class="offersBody__block">7 <small>дней</small></td>
-                                <td class="offersBody__block">25/15</td>
-                                <td class="offersBody__block offersBody__block--small">Хабаровск</td>
-                                <td class="offersBody__block offersBody__block--small">
-                                    <a class="offers__dealLink" href="#modal-deal">Совершить сделку</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="tab-2" class="tabBody hidden">
-                    <table class="offers">
-                        <thead class="offersHead">
-                        <tr class="offersRow">
-                            <th class="offersHead__block offersHead__block_icon offersHead__block_icon_card">Кредитор</th>
-                            <th class="offersHead__block">Сумма в кредит/<br/>к погашению</th>
-                            <th class="offersHead__block">% за период</th>
-                            <th class="offersHead__block">Срок</th>
-                            <th class="offersHead__block">Надежность/<br/>Прозрачность</th>
-                            <th class="offersHead__block">Город</th>
-                            <th class="offersHead__block offersHead__block_empty"></th>
+            <a class="btn btn--inline btn--primary btn--save" href="#modal_warning">Сохранить</a>
+            <div class="contract__buttons text-right">
+                <a class="btn btn--inline btn--primary btn--save" href="" disabled>Отказ с пояснением</a>
+                <a class="btn btn--inline btn--primary btn--save btn--enterContract" href="#modal-inWork">Заключить договор</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <span class="contract__info">Тип договора: </span> <a class="contract__info" href="">юр.лицо+физ.лицо</a>
+            <div class="contract__chartPays">
+                <div class="contract__chartHeader">График платежей</div>
+                <table class="chartTable">
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Сумма</th>
                         </tr>
-                        </thead>
-                        <tbody class="offersBody">
-                        <tr class="offersRow offersBody__row">
-                            <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">invoker</a></td>
-                            <td class="offersBody__block">2000 / 3200 <small>руб.</small></td>
-                            <td class="offersBody__block">10</td>
-                            <td class="offersBody__block">5 <small>дней</small></td>
-                            <td class="offersBody__block">15/18</td>
-                            <td class="offersBody__block offersBody__block--small">Хабаровск</td>
-                            <td class="offersBody__block offersBody__block--small">
-                                <a class="offers__dealLink" href="">Совершить сделку</a>
-                            </td>
+                    </thead>
+                    <tbody>
+                        <tr class="checkedRow">
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
                         </tr>
-                        <tr class="offersRow offersBody__row">
-                            <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">rutracker</a></td>
-                            <td class="offersBody__block">1500 / 1800 <small>руб.</small></td>
-                            <td class="offersBody__block">25</td>
-                            <td class="offersBody__block">4 <small>дней</small></td>
-                            <td class="offersBody__block">21/13</td>
-                            <td class="offersBody__block offersBody__block--small">Хабаровск</td>
-                            <td class="offersBody__block offersBody__block--small">
-                                <a class="offers__dealLink" href="">Совершить сделку</a>
-                            </td>
+                        <tr class="prevDate">
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
                         </tr>
-                        <tr class="offersRow offersBody__row">
-                            <td class="offersBody__block offersBody__block--user"><a class="userLink offers__userLink" href="#">paulwalker</a></td>
-                            <td class="offersBody__block">80000 / 82500 <small>руб.</small></td>
-                            <td class="offersBody__block">5</td>
-                            <td class="offersBody__block">70 <small>дней</small></td>
-                            <td class="offersBody__block">35/98</td>
-                            <td class="offersBody__block offersBody__block--small">Хабаровск</td>
-                            <td class="offersBody__block offersBody__block--small">
-                                <a class="offers__dealLink" href="">Совершить сделку</a>
-                            </td>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
                         </tr>
-                        </tbody>
-                    </table>
-        </div><!--Wrapper -->
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>09.09.2015</td>
+                            <td>228 руб.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
+        
+
+
+
+
     <footer class="footer">
     <div class="container">
         <div class="row">
@@ -297,42 +268,12 @@
 
 
 
-<!--Modals and Usercards -->
 
-
-<div id="userCard-template" class="hidden" aria-hidden="true">
-        <div class="userCard">
-            <div class="template__body">
-                <%this.img%>
-                <div class="userCard__row userCard__row--p"><a target="_blank" class="userCard__fio" href=""><%this.fio%></a></div>
-                <div class="userCard__row userCard__row--type userCard__row--p"><%this.type%></div>
-                <div class="userCard__row userCard__row_age userCard__row--p"><%this.age%> <span class="userCard__city"><%this.city%></span></div>
-                <div class="userCard__row userCard__row--register">Зарегистрирован: <span class="userCard__value"><%this.register%></span></div>
-                <div class="userCard__row userCard__row_deals">Сделок: <span class="userCard__value"><%this.deals%></span></div>
-                <div class="userCard__row userCard__row_rating">Рейтинг: <span class="userCard__value"><%this.rating%></span></div>
-                <div class="userCard__row userCard__row_opacity">Прозрачность: <span class="userCard__value"><%this.opacity%></span></div>
-                <div class="userCard__row userCard__row_reviews">Отзывы: <span class="userCard__value"><%this.reviews%></span></div>
-                <div class="userCard__row userCard__row_votes">
-                    Количество оценок:
-                    <a class="userCard__vote userCard__vote--up" href="">40</a>
-                    <a class="userCard__vote userCard__vote--down" href="">16</a>
-                </div>
-                <div class="userCard__row userCard__row--btn">
-                    <a class="btn btn--inline btn--primary userCard__btn" href="">Написать сообщение</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-<!--Modal -->
-
-<div class="modal" id="modal-deal" aria-hidden="true">
+<div class="modal" id="modal-inWork" aria-hidden="true">
         <a href="#close" class="modalBlack"></a>
         <div class="modalDialog orderDialog">
             <div class="modal-body">
-                <div class="orderDialog__status">Ожидает подтверждения</div>
+                <div class="orderDialog__status">В работе</div>
                 <div class="orderDialog__orderNumber">Заявка на сделку #12345 от 15.10.2015 на выдачу займа</div>
                 <div class="orderDialog__content row aboutOrder">
                     <div class="col-md-6 aboutOrder__ticket">
@@ -362,25 +303,14 @@
                         </div>
                         <div class="myMenu__buttons">
                             <a class="btn btn--inline btn--primary userCard__btn userCard__btn--modal" href="">Написать сообщение</a>
+                            
                         </div>
-                        <div class="aboutOrder__comments">
+                        <div class="aboutOrder__comments aboutOrder__comments--inWork">
                             <span>Комментарий:</span>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
                         </div>
-                        <div class="aboutOrder__buttons">
-                            <div class="aboutOrder__buttonWrapper">
-                                <button class="btn btn--primary btn--full btn--confirm">
-                                    Подтвердить
-                                </button>
-                                <button class="btn btn--primary btn--full btn--reject">
-                                    Отклонить
-                                </button>
-                            </div>
-                            <span>На подтверждение заявки дается 3 дня</span>
-                        </div>
-                        <textarea>Комментарии</textarea>
                     </div>
                     <div class="col-md-6">
                         <div class="aboutLoan">
@@ -425,11 +355,61 @@
                 </div><!--row -->
 
                 <div class="orderDialog__close">
-                    <a href=""><img src="assets/img/close2.png"></a>
+                    <a href="#close"><img src="assets/img/close2.png"></a>
                 </div>
             </div><!--modalbody -->
         </div>
     </div>
+
+    <div class="modal" id="modal_warning" aria-hidden="true">
+        <a href="#close" class="modalBlack"></a>
+        <div class="modalDialog warningDialog">
+            <div class="modal-body">
+                <div class="warningDialog__message">Тип договора выбран автоматически в соответсвии 
+                с типом вашего аккаунта и типом аккаунта
+                пользователя user_name. 
+                Вы уверены, что хотите изменить тип договора?
+                </div>
+                <a class="btn btn--inline btn--primary" href="#modal_warning2">Сменить тип договора</a>
+        
+    <div class="orderDialog__close">
+        <a href="#close"><img src="assets/img/close2.png"></a>
+    </div>
+            </div><!--modalbody -->
+        </div>
+    </div>
+
+
+
+
+    <div class="modal" id="modal_warning2" aria-hidden="true">
+        <a href="#close" class="modalBlack"></a>
+        <div class="modalDialog typeContractDialog">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Выберите тип договора:</span>
+                    </div>
+                    <div class="col-md-6">
+                        <select>
+                            <option>
+                                Марк
+                            </option>
+                            <option>
+                                Марк 2
+                            </option>
+                        </select>
+                        <a class="btn btn--primary btn--inline btn--full btn--center" href="#modal_warning2">Сменить тип договора</a>
+                    </div>
+                </div>
+    <div class="orderDialog__close">
+        <a href="#close"><img src="assets/img/close2.png"></a>
+    </div>
+            </div><!--modalbody -->
+        </div>
+    </div>
+
+
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>
