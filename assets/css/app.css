@@ -1524,20 +1524,12 @@ a:hover {
   background-image: url('../img/icon-message-white.png');
   background-repeat: no-repeat;
   background-position: 18px 50%;
-  font-weight: 300;
-}
-.userCard__btn--modal {
-  margin-top: 10px;
-}
-.userCard__btn--contract {
-  background: #3f6095;
-  padding: 7px 35px;
 }
 .userCard__value {
   color: #212121;
 }
 .userCard__vote {
-  text-decoration: none !important;
+  text-decoration: none;
   min-height: 23px;
   margin-left: 5px;
 }
@@ -1545,14 +1537,14 @@ a:hover {
   background: transparent url('../img/icon-vote-up.png') 0 3px no-repeat;
   padding-left: 25px;
   display: inline-block;
-  color: #0da4ab !important;
+  color: #0da4ab;
   padding-top: 5px;
 }
 .userCard__vote--down {
   background: transparent url('../img/icon-vote-down.png') 0 3px no-repeat;
   padding-left: 25px;
   display: inline-block;
-  color: #d04949 !important;
+  color: #d04949;
 }
 .userCard__accessDenied {
   color: #3f6095;
@@ -2381,11 +2373,9 @@ MyPage
 }
 .myMenu__buttons img {
   display: inline-block;
-  vertical-align: middle;
   width: 20px;
   height: 15px;
   margin-right: 10px;
-  margin-top: -3px;
 }
 .myMenu__info {
   margin-top: 10px;
@@ -2602,7 +2592,7 @@ BlackList
   text-align: center;
   font: 0/0 a;
   /* IE Fix */
-  *font: 0.66666667px Lucida Sans Unicode, Arial Unicode MS, Arial;
+  *font: 0.6666666666666666px Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
 /* Стиль кнопки SELECTA  */
 .selectric .button:after {
@@ -2845,7 +2835,7 @@ input[type="radio"]:checked + label:after {
   -o-transition: all 0.1s ease 0s;
 }
 .testclass {
-  border: 1px solid green;
+  border: 5px dotted red;
 }
 /*
 
