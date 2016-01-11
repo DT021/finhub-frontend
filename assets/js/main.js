@@ -289,7 +289,7 @@ $(window).on("scroll", function() {
             $(".firstRow td").css('padding-top','15px');
         };
 
-        var bot = $(".chartTable").outerHeight()-340;
+        var bot = $(".chartTable").outerHeight() - top+50;
         if ($(window).scrollTop() >= bot) { 
 
             $(".chartTable tbody tr").removeClass('lastChildFixed');
