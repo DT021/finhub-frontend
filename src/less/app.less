@@ -3217,7 +3217,6 @@ BlackList
   border-color: white;
   background: inherit;
   border-bottom-width: 0;
-  padding-bottom: 2px;
 }
 .selectric-open .selectric-items {
   display: block;
@@ -3882,12 +3881,11 @@ input[type="radio"] {
 	.theadFixed {
 		position: fixed;
 		top:0;
-		
 		th:first-child {
 			padding: 15px 64px;
 		}
 		th:nth-child(2){
-			padding: 15px 47px;
+			padding: 15px 51px;
 		}
 
 	}
@@ -3895,10 +3893,17 @@ input[type="radio"] {
 	.lastChildFixed {
 		position: fixed;
 		bottom: 0%;
+		td:first-child {
+			padding: 15px 40px;
+		}
+		td:nth-child(2){
+			padding: 15px 45px;
+		}
 	}
 	.lastChildRelative {
 		background: #757575;
 		color:white;
+		position: relative !important;
 	}
 	
 

@@ -275,29 +275,29 @@ $(function(){
         $(this).addClass('checkedRow');
     });
 
-    $(window).on("scroll", function() {
+$(window).on("scroll", function() {
         $(".chartTable tbody tr:last-child").addClass('lastChildFixed');
        var top= $(".chartTable").offset().top;
-        if ($(window).scrollTop() > top) { 
+        if ($(window).scrollTop() >= top) { 
             $(".chartTable thead").addClass('theadFixed');
+            $(".firstRow").css('height','100px');
+            $(".firstRow td").css('padding-top','50px');
         }
         else {
             $(".chartTable thead").removeClass('theadFixed');
+            $(".firstRow").css('height','50px');
+            $(".firstRow td").css('padding-top','15px');
         };
 
-        var bot = $(".chartTable").outerHeight();
+        var bot = $(".chartTable").outerHeight()-340;
         if ($(window).scrollTop() >= bot) { 
+
             $(".chartTable tbody tr").removeClass('lastChildFixed');
+        }else {
+
         }
-/*      
-        if ($(window).scrollTop() > bot) { 
-            $(".chartTable tr:last-child").removeClass('lastChildFixed');
-        }
-        else {
-            $(".chartTable tr:last-child").addClass('lastChildFixed');
-        };
-    */
-        
+     
+
     });
 
 });
